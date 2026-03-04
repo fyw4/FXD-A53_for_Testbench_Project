@@ -69,6 +69,7 @@ volatile int record_err = 0;
 volatile float current_val = 0;
 volatile int flag_for_extinguish_carbinet_NO_1 = 0;
 volatile int flag_for_extinguish_carbinet_NO_2 = 0;
+volatile char sw_choose = 0;
 
 int set_ip_flag = 0;
 unsigned char eth_converter_cabinet_No = 0;

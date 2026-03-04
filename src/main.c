@@ -55,69 +55,6 @@
 #include "eth.h"
 #include "mcp3201.h"
 
-// #define TEST_MODE 1
-int thread_test(pthread_attr_t *attr_pointer)
-{
-	int ret = 0;
-	struct sched_param param;
-	int policy, inher;
-
-	int ret_pthread_can_sd_create = -1;
-	int ret_pthread_can_rec_create = -1;
-	int ret_pthread_eth_send_create = -1;
-	int ret_pthread_gpio_create = -1;
-	int ret_pthread_rs485_create = -1;
-	int ret_pthread_dido_create = -1;
-	int ret_pthread_ai_create = -1;
-
-	pthread_t id_gpio;
-	pthread_t id_rs485;
-	pthread_t id_reboot;
-	pthread_t id_dido;
-	pthread_t id_ai;
-	pthread_t id_can_re;
-	pthread_t id_can_sd;
-	pthread_t id_eth_send;
-
-	param.__sched_priority = PRIO_TASK_GPIO;
-	pthread_attr_setschedparam(attr_pointer, &param);
-	ret_pthread_gpio_create = pthread_create(&id_gpio, attr_pointer, (void *)thread_gpio_test, NULL);
-	if (ret_pthread_gpio_create != 0)
-	{
-		_CCU_ERROR_(ERROR_THREAD_TEST_CREAT, "thread_gpio_test");
-		return EXIT_FAILURE;
-	}
-
-	param.__sched_priority = PRIO_TASK_DIDO;
-	pthread_attr_setschedparam(attr_pointer, &param);
-	ret_pthread_dido_create = pthread_create(&id_dido, attr_pointer, (void *)thread_DIDO_task, NULL);
-	if (ret_pthread_dido_create != 0)
-	{
-		_CCU_ERROR_(ERROR_THREAD_TEST_CREAT, "thread_DIDO_task");
-		return EXIT_FAILURE;
-	}
-
-	param.__sched_priority = PRIO_TASK_CAN_RE;
-	pthread_attr_setschedparam(attr_pointer, &param);
-	ret_pthread_can_rec_create = pthread_create(&id_can_re, attr_pointer, (void *)can_recieve_test, NULL);
-	if (ret_pthread_can_rec_create != 0)
-	{
-		_CCU_ERROR_(ERROR_THREAD_TEST_CREAT, "can_recieve_test");
-		return EXIT_FAILURE;
-	}
-
-	param.__sched_priority = PRIO_TASK_ETH_SEND;
-	pthread_attr_setschedparam(attr_pointer, &param);
-	ret_pthread_eth_send_create = pthread_create(&id_eth_send, attr_pointer, (void *)client_test, NULL);
-	if (ret_pthread_eth_send_create != 0)
-	{
-		_CCU_ERROR_(ERROR_THREAD_TEST_CREAT, "client_test");
-		return EXIT_FAILURE;
-	}
-
-	return 0;
-}
-
 int init_thread()
 {
 	int ret = 0;
@@ -130,7 +67,7 @@ int init_thread()
 	int ret_pthread_eth_recv_create = -1;
 	int ret_pthread_eth_send_for_6A_create = -1;
 	int ret_pthread_eth_recv_for_6A_create = -1;
-	int ret_pthread_eth_muticast_recv_for_6A_create = -1;
+	int ret_pthread_eth_muticast_recv_for_create = -1;
 	int ret_pthread_gpio_create = -1;
 	int ret_pthread_rs485_create = -1;
 	int ret_pthread_func_reboot_create = -1;
@@ -150,6 +87,7 @@ int init_thread()
 	int ret_pthread_can_opencircuit_send_create = -1;
 	int ret_pthread_DIP_switch_create = -1;
 	int ret_pthread_can_smoke_sensor_ctrl = -1;
+	int ret_pthread_can_send = -1;
 
 	pthread_t id_can_sd;
 	pthread_t id_can_re;
@@ -157,7 +95,7 @@ int init_thread()
 	pthread_t id_eth_send_to_6A;
 	pthread_t id_eth_recv;
 	pthread_t id_eth_recv_from_6A;
-	pthread_t id_eth_recv_from_6A_by_muticast;
+	pthread_t id_eth_recv_from_by_muticast;
 	pthread_t id_gpio;
 	pthread_t id_test;
 	pthread_t id_rs485;
@@ -178,6 +116,7 @@ int init_thread()
 	pthread_t id_dido;
 	pthread_t id_ai;
 	pthread_t id_led;
+	pthread_t id_can_send;
 
 	pthread_attr_t attr;
 

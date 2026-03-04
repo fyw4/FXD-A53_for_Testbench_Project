@@ -648,6 +648,8 @@ extern int sd_bus_error;
 extern int sd_bus_error_position[2];
 extern int sd_can_normal;
 
+extern volatile char sw_choose;
+
 extern int debug_can0_ok;
 extern int debug_can1_ok;
 

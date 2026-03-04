@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/mnt/hgfs/工程代码/FXD-A53（6口字符叠加）can ack重发逻辑(eth1组播)"
+CMAKE_SOURCE_DIR = /mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/mnt/hgfs/工程代码/FXD-A53（6口字符叠加）can ack重发逻辑(eth1组播)/bin"
+CMAKE_BINARY_DIR = /mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/hgfs/工程代码/FXD-A53（6口字符叠加）can ack重发逻辑(eth1组播)/bin/CMakeFiles" "/mnt/hgfs/工程代码/FXD-A53（6口字符叠加）can ack重发逻辑(eth1组播)/bin/CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles /mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/hgfs/工程代码/FXD-A53（6口字符叠加）can ack重发逻辑(eth1组播)/bin/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named FXD-A53
+# Target rules for targets named FXD-A53_for_Testbench
 
 # Build rule for target.
-FXD-A53: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 FXD-A53
-.PHONY : FXD-A53
+FXD-A53_for_Testbench: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 FXD-A53_for_Testbench
+.PHONY : FXD-A53_for_Testbench
 
 # fast build rule for target.
-FXD-A53/fast:
-	$(MAKE) -f CMakeFiles/FXD-A53.dir/build.make CMakeFiles/FXD-A53.dir/build
-.PHONY : FXD-A53/fast
+FXD-A53_for_Testbench/fast:
+	$(MAKE) -f CMakeFiles/FXD-A53_for_Testbench.dir/build.make CMakeFiles/FXD-A53_for_Testbench.dir/build
+.PHONY : FXD-A53_for_Testbench/fast
 
 src/can.o: src/can.c.o
 
@@ -129,7 +129,7 @@ src/can.o: src/can.c.o
 
 # target to build an object file
 src/can.c.o:
-	$(MAKE) -f CMakeFiles/FXD-A53.dir/build.make CMakeFiles/FXD-A53.dir/src/can.c.o
+	$(MAKE) -f CMakeFiles/FXD-A53_for_Testbench.dir/build.make CMakeFiles/FXD-A53_for_Testbench.dir/src/can.c.o
 .PHONY : src/can.c.o
 
 src/can.i: src/can.c.i
@@ -138,7 +138,7 @@ src/can.i: src/can.c.i
 
 # target to preprocess a source file
 src/can.c.i:
-	$(MAKE) -f CMakeFiles/FXD-A53.dir/build.make CMakeFiles/FXD-A53.dir/src/can.c.i
+	$(MAKE) -f CMakeFiles/FXD-A53_for_Testbench.dir/build.make CMakeFiles/FXD-A53_for_Testbench.dir/src/can.c.i
 .PHONY : src/can.c.i
 
 src/can.s: src/can.c.s
@@ -147,7 +147,7 @@ src/can.s: src/can.c.s
 
 # target to generate assembly for a file
 src/can.c.s:
-	$(MAKE) -f CMakeFiles/FXD-A53.dir/build.make CMakeFiles/FXD-A53.dir/src/can.c.s
+	$(MAKE) -f CMakeFiles/FXD-A53_for_Testbench.dir/build.make CMakeFiles/FXD-A53_for_Testbench.dir/src/can.c.s
 .PHONY : src/can.c.s
 
 src/eth.o: src/eth.c.o
@@ -156,7 +156,7 @@ src/eth.o: src/eth.c.o
 
 # target to build an object file
 src/eth.c.o:
-	$(MAKE) -f CMakeFiles/FXD-A53.dir/build.make CMakeFiles/FXD-A53.dir/src/eth.c.o
+	$(MAKE) -f CMakeFiles/FXD-A53_for_Testbench.dir/build.make CMakeFiles/FXD-A53_for_Testbench.dir/src/eth.c.o
 .PHONY : src/eth.c.o
 
 src/eth.i: src/eth.c.i
@@ -165,7 +165,7 @@ src/eth.i: src/eth.c.i
 
 # target to preprocess a source file
 src/eth.c.i:
-	$(MAKE) -f CMakeFiles/FXD-A53.dir/build.make CMakeFiles/FXD-A53.dir/src/eth.c.i
+	$(MAKE) -f CMakeFiles/FXD-A53_for_Testbench.dir/build.make CMakeFiles/FXD-A53_for_Testbench.dir/src/eth.c.i
 .PHONY : src/eth.c.i
 
 src/eth.s: src/eth.c.s
@@ -174,7 +174,7 @@ src/eth.s: src/eth.c.s
 
 # target to generate assembly for a file
 src/eth.c.s:
-	$(MAKE) -f CMakeFiles/FXD-A53.dir/build.make CMakeFiles/FXD-A53.dir/src/eth.c.s
+	$(MAKE) -f CMakeFiles/FXD-A53_for_Testbench.dir/build.make CMakeFiles/FXD-A53_for_Testbench.dir/src/eth.c.s
 .PHONY : src/eth.c.s
 
 src/globalfunction.o: src/globalfunction.c.o
@@ -183,7 +183,7 @@ src/globalfunction.o: src/globalfunction.c.o
 
 # target to build an object file
 src/globalfunction.c.o:
-	$(MAKE) -f CMakeFiles/FXD-A53.dir/build.make CMakeFiles/FXD-A53.dir/src/globalfunction.c.o
+	$(MAKE) -f CMakeFiles/FXD-A53_for_Testbench.dir/build.make CMakeFiles/FXD-A53_for_Testbench.dir/src/globalfunction.c.o
 .PHONY : src/globalfunction.c.o
 
 src/globalfunction.i: src/globalfunction.c.i
@@ -192,7 +192,7 @@ src/globalfunction.i: src/globalfunction.c.i
 
 # target to preprocess a source file
 src/globalfunction.c.i:
-	$(MAKE) -f CMakeFiles/FXD-A53.dir/build.make CMakeFiles/FXD-A53.dir/src/globalfunction.c.i
+	$(MAKE) -f CMakeFiles/FXD-A53_for_Testbench.dir/build.make CMakeFiles/FXD-A53_for_Testbench.dir/src/globalfunction.c.i
 .PHONY : src/globalfunction.c.i
 
 src/globalfunction.s: src/globalfunction.c.s
@@ -201,7 +201,7 @@ src/globalfunction.s: src/globalfunction.c.s
 
 # target to generate assembly for a file
 src/globalfunction.c.s:
-	$(MAKE) -f CMakeFiles/FXD-A53.dir/build.make CMakeFiles/FXD-A53.dir/src/globalfunction.c.s
+	$(MAKE) -f CMakeFiles/FXD-A53_for_Testbench.dir/build.make CMakeFiles/FXD-A53_for_Testbench.dir/src/globalfunction.c.s
 .PHONY : src/globalfunction.c.s
 
 src/globalvariables.o: src/globalvariables.c.o
@@ -210,7 +210,7 @@ src/globalvariables.o: src/globalvariables.c.o
 
 # target to build an object file
 src/globalvariables.c.o:
-	$(MAKE) -f CMakeFiles/FXD-A53.dir/build.make CMakeFiles/FXD-A53.dir/src/globalvariables.c.o
+	$(MAKE) -f CMakeFiles/FXD-A53_for_Testbench.dir/build.make CMakeFiles/FXD-A53_for_Testbench.dir/src/globalvariables.c.o
 .PHONY : src/globalvariables.c.o
 
 src/globalvariables.i: src/globalvariables.c.i
@@ -219,7 +219,7 @@ src/globalvariables.i: src/globalvariables.c.i
 
 # target to preprocess a source file
 src/globalvariables.c.i:
-	$(MAKE) -f CMakeFiles/FXD-A53.dir/build.make CMakeFiles/FXD-A53.dir/src/globalvariables.c.i
+	$(MAKE) -f CMakeFiles/FXD-A53_for_Testbench.dir/build.make CMakeFiles/FXD-A53_for_Testbench.dir/src/globalvariables.c.i
 .PHONY : src/globalvariables.c.i
 
 src/globalvariables.s: src/globalvariables.c.s
@@ -228,7 +228,7 @@ src/globalvariables.s: src/globalvariables.c.s
 
 # target to generate assembly for a file
 src/globalvariables.c.s:
-	$(MAKE) -f CMakeFiles/FXD-A53.dir/build.make CMakeFiles/FXD-A53.dir/src/globalvariables.c.s
+	$(MAKE) -f CMakeFiles/FXD-A53_for_Testbench.dir/build.make CMakeFiles/FXD-A53_for_Testbench.dir/src/globalvariables.c.s
 .PHONY : src/globalvariables.c.s
 
 src/gpio.o: src/gpio.c.o
@@ -237,7 +237,7 @@ src/gpio.o: src/gpio.c.o
 
 # target to build an object file
 src/gpio.c.o:
-	$(MAKE) -f CMakeFiles/FXD-A53.dir/build.make CMakeFiles/FXD-A53.dir/src/gpio.c.o
+	$(MAKE) -f CMakeFiles/FXD-A53_for_Testbench.dir/build.make CMakeFiles/FXD-A53_for_Testbench.dir/src/gpio.c.o
 .PHONY : src/gpio.c.o
 
 src/gpio.i: src/gpio.c.i
@@ -246,7 +246,7 @@ src/gpio.i: src/gpio.c.i
 
 # target to preprocess a source file
 src/gpio.c.i:
-	$(MAKE) -f CMakeFiles/FXD-A53.dir/build.make CMakeFiles/FXD-A53.dir/src/gpio.c.i
+	$(MAKE) -f CMakeFiles/FXD-A53_for_Testbench.dir/build.make CMakeFiles/FXD-A53_for_Testbench.dir/src/gpio.c.i
 .PHONY : src/gpio.c.i
 
 src/gpio.s: src/gpio.c.s
@@ -255,7 +255,7 @@ src/gpio.s: src/gpio.c.s
 
 # target to generate assembly for a file
 src/gpio.c.s:
-	$(MAKE) -f CMakeFiles/FXD-A53.dir/build.make CMakeFiles/FXD-A53.dir/src/gpio.c.s
+	$(MAKE) -f CMakeFiles/FXD-A53_for_Testbench.dir/build.make CMakeFiles/FXD-A53_for_Testbench.dir/src/gpio.c.s
 .PHONY : src/gpio.c.s
 
 src/main.o: src/main.c.o
@@ -264,7 +264,7 @@ src/main.o: src/main.c.o
 
 # target to build an object file
 src/main.c.o:
-	$(MAKE) -f CMakeFiles/FXD-A53.dir/build.make CMakeFiles/FXD-A53.dir/src/main.c.o
+	$(MAKE) -f CMakeFiles/FXD-A53_for_Testbench.dir/build.make CMakeFiles/FXD-A53_for_Testbench.dir/src/main.c.o
 .PHONY : src/main.c.o
 
 src/main.i: src/main.c.i
@@ -273,7 +273,7 @@ src/main.i: src/main.c.i
 
 # target to preprocess a source file
 src/main.c.i:
-	$(MAKE) -f CMakeFiles/FXD-A53.dir/build.make CMakeFiles/FXD-A53.dir/src/main.c.i
+	$(MAKE) -f CMakeFiles/FXD-A53_for_Testbench.dir/build.make CMakeFiles/FXD-A53_for_Testbench.dir/src/main.c.i
 .PHONY : src/main.c.i
 
 src/main.s: src/main.c.s
@@ -282,7 +282,7 @@ src/main.s: src/main.c.s
 
 # target to generate assembly for a file
 src/main.c.s:
-	$(MAKE) -f CMakeFiles/FXD-A53.dir/build.make CMakeFiles/FXD-A53.dir/src/main.c.s
+	$(MAKE) -f CMakeFiles/FXD-A53_for_Testbench.dir/build.make CMakeFiles/FXD-A53_for_Testbench.dir/src/main.c.s
 .PHONY : src/main.c.s
 
 src/mcp3201.o: src/mcp3201.c.o
@@ -291,7 +291,7 @@ src/mcp3201.o: src/mcp3201.c.o
 
 # target to build an object file
 src/mcp3201.c.o:
-	$(MAKE) -f CMakeFiles/FXD-A53.dir/build.make CMakeFiles/FXD-A53.dir/src/mcp3201.c.o
+	$(MAKE) -f CMakeFiles/FXD-A53_for_Testbench.dir/build.make CMakeFiles/FXD-A53_for_Testbench.dir/src/mcp3201.c.o
 .PHONY : src/mcp3201.c.o
 
 src/mcp3201.i: src/mcp3201.c.i
@@ -300,7 +300,7 @@ src/mcp3201.i: src/mcp3201.c.i
 
 # target to preprocess a source file
 src/mcp3201.c.i:
-	$(MAKE) -f CMakeFiles/FXD-A53.dir/build.make CMakeFiles/FXD-A53.dir/src/mcp3201.c.i
+	$(MAKE) -f CMakeFiles/FXD-A53_for_Testbench.dir/build.make CMakeFiles/FXD-A53_for_Testbench.dir/src/mcp3201.c.i
 .PHONY : src/mcp3201.c.i
 
 src/mcp3201.s: src/mcp3201.c.s
@@ -309,7 +309,7 @@ src/mcp3201.s: src/mcp3201.c.s
 
 # target to generate assembly for a file
 src/mcp3201.c.s:
-	$(MAKE) -f CMakeFiles/FXD-A53.dir/build.make CMakeFiles/FXD-A53.dir/src/mcp3201.c.s
+	$(MAKE) -f CMakeFiles/FXD-A53_for_Testbench.dir/build.make CMakeFiles/FXD-A53_for_Testbench.dir/src/mcp3201.c.s
 .PHONY : src/mcp3201.c.s
 
 src/signalfunction.o: src/signalfunction.c.o
@@ -318,7 +318,7 @@ src/signalfunction.o: src/signalfunction.c.o
 
 # target to build an object file
 src/signalfunction.c.o:
-	$(MAKE) -f CMakeFiles/FXD-A53.dir/build.make CMakeFiles/FXD-A53.dir/src/signalfunction.c.o
+	$(MAKE) -f CMakeFiles/FXD-A53_for_Testbench.dir/build.make CMakeFiles/FXD-A53_for_Testbench.dir/src/signalfunction.c.o
 .PHONY : src/signalfunction.c.o
 
 src/signalfunction.i: src/signalfunction.c.i
@@ -327,7 +327,7 @@ src/signalfunction.i: src/signalfunction.c.i
 
 # target to preprocess a source file
 src/signalfunction.c.i:
-	$(MAKE) -f CMakeFiles/FXD-A53.dir/build.make CMakeFiles/FXD-A53.dir/src/signalfunction.c.i
+	$(MAKE) -f CMakeFiles/FXD-A53_for_Testbench.dir/build.make CMakeFiles/FXD-A53_for_Testbench.dir/src/signalfunction.c.i
 .PHONY : src/signalfunction.c.i
 
 src/signalfunction.s: src/signalfunction.c.s
@@ -336,7 +336,7 @@ src/signalfunction.s: src/signalfunction.c.s
 
 # target to generate assembly for a file
 src/signalfunction.c.s:
-	$(MAKE) -f CMakeFiles/FXD-A53.dir/build.make CMakeFiles/FXD-A53.dir/src/signalfunction.c.s
+	$(MAKE) -f CMakeFiles/FXD-A53_for_Testbench.dir/build.make CMakeFiles/FXD-A53_for_Testbench.dir/src/signalfunction.c.s
 .PHONY : src/signalfunction.c.s
 
 # Help Target
@@ -346,7 +346,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... FXD-A53"
+	@echo "... FXD-A53_for_Testbench"
 	@echo "... edit_cache"
 	@echo "... src/can.o"
 	@echo "... src/can.i"

@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/hgfs/工程代码/FXD-A53（6口字符叠加）can ack重发逻辑(eth1组播)
+# Install script for directory: /mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/mnt/hgfs/工程代码/FXD-A53（6口字符叠加）can ack重发逻辑(eth1组播)/bin/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

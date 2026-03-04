@@ -1,3 +1,3 @@
-/mnt/hgfs/工程代码/FXD-A53（6口字符叠加）can ack重发逻辑(eth1组播)/bin/CMakeFiles/rebuild_cache.dir
-/mnt/hgfs/工程代码/FXD-A53（6口字符叠加）can ack重发逻辑(eth1组播)/bin/CMakeFiles/FXD-A53.dir
-/mnt/hgfs/工程代码/FXD-A53（6口字符叠加）can ack重发逻辑(eth1组播)/bin/CMakeFiles/edit_cache.dir
+/mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/rebuild_cache.dir
+/mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/FXD-A53_for_Testbench.dir
+/mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/edit_cache.dir

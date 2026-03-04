@@ -6,5 +6,5 @@ C_FLAGS =
 
 C_DEFINES = 
 
-C_INCLUDES = -I"/mnt/hgfs/工程代码/FXD-A53（6口字符叠加）can ack重发逻辑(eth1组播)/include" 
+C_INCLUDES = -I/mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/include 
 

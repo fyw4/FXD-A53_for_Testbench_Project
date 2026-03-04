@@ -32,7 +32,7 @@ set(CMAKE_FIND_ROOT_PATH_MODE_PACKAGE ONLY)
 
 
 ########生成可执行文件###########
-project(FXD-A53)
+project(FXD-A53_for_Testbench)
 
 set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
 
@@ -43,14 +43,14 @@ include_directories(
 
 # 生成可执行文件
 aux_source_directory(./src/ DIR_SRCS)
-add_executable(FXD-A53 ${DIR_SRCS})
+add_executable(FXD-A53_for_Testbench ${DIR_SRCS})
 
 # 链接相关库
-target_link_libraries(FXD-A53 PUBLIC pthread)
-target_link_libraries(FXD-A53 PUBLIC rt)
-target_link_libraries(FXD-A53 PUBLIC m)
-target_link_libraries(FXD-A53 ${LIBRARY_OUTPUT_PATH}/libsocketcan.a)
+target_link_libraries(FXD-A53_for_Testbench PUBLIC pthread)
+target_link_libraries(FXD-A53_for_Testbench PUBLIC rt)
+target_link_libraries(FXD-A53_for_Testbench PUBLIC m)
+target_link_libraries(FXD-A53_for_Testbench ${LIBRARY_OUTPUT_PATH}/libsocketcan.a)
 #################################
 
-message("\n #### FXD-A53 Makefile Created ! #### \n")
+message("\n #### FXD-A53_for_Testbench Makefile Created ! #### \n")
 

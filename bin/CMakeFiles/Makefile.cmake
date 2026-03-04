@@ -114,5 +114,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/FXD-A53.dir/DependInfo.cmake"
+  "CMakeFiles/FXD-A53_for_Testbench.dir/DependInfo.cmake"
   )

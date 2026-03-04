@@ -21,6 +21,8 @@
 #define TIME_COUNT_for_POWER_RESET 9       // 9s
 #define TIME_COUNT_for_POWER_OPEN_CIRCUIT 3 // 3s
 
+int init_gpio(char *name);
+
 void thread_func_reboot();
 
 void thread_func_gpio();

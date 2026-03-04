@@ -38,6 +38,17 @@ timer_t global_fire_timer_id;
 timer_t global_reboot_and_reset_timer_id;
 timer_t global_video_record_timer_id;
 
+int init_gpio(char *name)
+{
+    gpiofd = open(name, O_RDWR);
+    if (gpiofd < 0)
+    {
+        _CCU_ERROR_(ERROR_GPIO_OPEN, name);
+        return 1;
+    }
+    return 0;
+}
+
 int reset_LED()
 {
     set_gpio_status(LED_SYSTEM_RUN, LED_OFF);
@@ -99,38 +110,20 @@ void thread_func_gpio()
 
         if (extinguish_info_message_to_Workbench->workbench_command_byte_NO_1 >> 1 & 0x01)
         {
-            set_gpio_status(FIRE_ALARM_to_TCU, LED_ON);
+            set_gpio_status(FIRE_EXTINGUISH_A2, LED_ON);
         }
         else
         {
-            set_gpio_status(FIRE_ALARM_to_TCU, LED_OFF);
+            set_gpio_status(FIRE_EXTINGUISH_A2, LED_OFF);
         }
 
         if (extinguish_info_message_to_Workbench->workbench_command_byte_NO_1 >> 2 & 0x01)
         {
-            set_gpio_status(FIRE_EXTINGUISH_REVERSED, LED_ON);
+            set_gpio_status(GPIO2_IO07, LED_ON);
         }
         else
         {
-            set_gpio_status(FIRE_EXTINGUISH_REVERSED, LED_OFF);
-        }
-
-        if (extinguish_info_message_to_Workbench->workbench_command_byte_NO_1 >> 3 & 0x01)
-        {
-            set_gpio_status(NORMALLY_OPEN_EXTINGUISH_A4, LED_ON);
-        }
-        else
-        {
-            set_gpio_status(NORMALLY_OPEN_EXTINGUISH_A4, LED_OFF);
-        }
-
-        if (extinguish_info_message_to_Workbench->workbench_command_byte_NO_1 >> 4 & 0x01)
-        {
-            set_gpio_status(NORMALLY_CLOSED_EXTINGUISH_A5, LED_ON);
-        }
-        else
-        {
-            set_gpio_status(NORMALLY_CLOSED_EXTINGUISH_A5, LED_OFF);
+            set_gpio_status(GPIO2_IO07, LED_OFF);
         }
 
         if (extinguish_info_message_to_Workbench->workbench_command_byte_NO_1 >> 5 & 0x01)
@@ -220,12 +213,8 @@ void thread_func_gpio()
             set_gpio_status(LED_RESERVE, LED_OFF);
         }
 
-        extinguish_info_message_to_Workbench->self_status_byte_NO_1 |= (get_gpio_status(DI1) & 0x01) << 0;
-        extinguish_info_message_to_Workbench->self_status_byte_NO_1 |= (get_gpio_status(DI2) & 0x01) << 1;
-        extinguish_info_message_to_Workbench->self_status_byte_NO_1 |= (get_gpio_status(DI3) & 0x01) << 2;
-        extinguish_info_message_to_Workbench->self_status_byte_NO_1 |= (get_gpio_status(DO1_OPEN_CIRCUIT) & 0x01) << 3;
-        extinguish_info_message_to_Workbench->self_status_byte_NO_1 |= (get_gpio_status(DO4_OPEN_CIRCUIT) & 0x01) << 4;
-        extinguish_info_message_to_Workbench->self_status_byte_NO_1 |= (get_gpio_status(DO5_OPEN_CIRCUIT) & 0x01) << 5;
+        extinguish_info_message_to_Workbench->self_status_byte_NO_1 |= (get_gpio_status(EXTINGUISH_ACK) & 0x01) << 0;
+        extinguish_info_message_to_Workbench->self_status_byte_NO_1 |= (get_gpio_status(OPEN_CIRCUIT) & 0x01) << 3;
 
         extinguish_info_message_to_Workbench->self_status_byte_NO_2 |= (get_gpio_status(BUTTON_REBOOT) & 0x01) << 0;
         extinguish_info_message_to_Workbench->self_status_byte_NO_2 |= (get_gpio_status(DC24V_POWER_SUPPLY_1_FAULT) & 0x01) << 1;
@@ -448,24 +437,6 @@ int init_DIP_switch()
         set_ip_flag = 5;
     }
 
-    memcpy(chmod_for_converter_cabinet_1_ip_file_for_C, IP_FILE_for_CONVERTER_CABINET_1_for_C, strlen(IP_FILE_for_CONVERTER_CABINET_1_for_C));
-    sprintf(chmod_cabinet_1_message_for_C, "chmod 777 %s 2> %s", chmod_for_converter_cabinet_1_ip_file_for_C, tmp_file);
-    system(chmod_cabinet_1_message_for_C);
-
-    if (getFileSize(tmp_file) > 0)
-    {
-        set_ip_flag = 5;
-    }
-
-    memcpy(chmod_for_converter_cabinet_2_ip_file_for_C, IP_FILE_for_CONVERTER_CABINET_2_for_C, strlen(IP_FILE_for_CONVERTER_CABINET_2_for_C));
-    sprintf(chmod_cabinet_2_message_for_C, "chmod 777 %s 2> %s", chmod_for_converter_cabinet_2_ip_file_for_C, tmp_file);
-    system(chmod_cabinet_2_message_for_C);
-
-    if (getFileSize(tmp_file) > 0)
-    {
-        set_ip_flag = 5;
-    }
-
     sprintf(tmp_file_rm, "rm -rf %s", tmp_file);
     system(tmp_file_rm);
 
@@ -492,20 +463,6 @@ int init_DIP_switch()
             sprintf(exec_message, "cp -f %s %s", chmod_for_converter_cabinet_2_ip_file_for_B, dest_ip_file);
             eth_converter_cabinet_No = CONVERTER_CABINET_NO_2_FLAG;                         // B-2
             eth_converter_cabinet_No_send_to_HKPro = CONVERTER_CABINET_NO_4_FLAG_for_HKPro; // 0x04
-            set_ip_flag = 2;
-        }
-        else if (sw_choose == SW5_CODE) // switch 5, 192.168.62.111, cab C-1
-        {
-            sprintf(exec_message, "cp -f %s %s", chmod_for_converter_cabinet_1_ip_file_for_C, dest_ip_file);
-            eth_converter_cabinet_No = CONVERTER_CABINET_NO_2_FLAG;                         // C-1
-            eth_converter_cabinet_No_send_to_HKPro = CONVERTER_CABINET_NO_5_FLAG_for_HKPro; // 0x05
-            set_ip_flag = 1;
-        }
-        else if (sw_choose == SW6_CODE) // switch 6, 192.168.62.112, cab C-2
-        {
-            sprintf(exec_message, "cp -f %s %s", chmod_for_converter_cabinet_2_ip_file_for_C, dest_ip_file);
-            eth_converter_cabinet_No = CONVERTER_CABINET_NO_2_FLAG;                         // C-2
-            eth_converter_cabinet_No_send_to_HKPro = CONVERTER_CABINET_NO_6_FLAG_for_HKPro; // 0x06
             set_ip_flag = 2;
         }
         else // default switch 1, 192.168.62.11, cab A-1

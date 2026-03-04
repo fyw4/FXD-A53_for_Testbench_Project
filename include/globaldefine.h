@@ -1,0 +1,448 @@
+/*
+ * globaldefine.h
+ *
+ *  Created on: 2023.09.08
+ *      Author: Wang Chyng-chuan
+ */
+
+#ifndef GLOBALDEFINE_H_
+#define GLOBALDEFINE_H_
+
+#define SOFTWARE_VERSION_NUMBER 130	 // 1 = 0.01
+#define SOFTWARE_VERSION_LETTER 0x41 // 0x41 = A
+#define HARDWARE_VERSION_NUMBER 1	 // 1 = 0.01
+#define HARDWARE_VERSION_LETTER 0x41 // 0x41 = A
+
+#define INNER_VERSION_NUMBER_X 1
+#define INNER_VERSION_NUMBER_Y 3
+#define INNER_VERSION_NUMBER_Z 0
+#define INNER_VERSION_NUMBER_Z_1 0
+
+// #define TEST_MODE 1
+#define DEBUG_MODE 1
+#define DATA_RECORD_MODE 1
+#define ENABLE_WATCHDOG 1
+
+#define MAX_SD_NO 10
+#define SD_OFFLINE_SECONDS 6
+#define SD_ONLINE_SECONDS 4
+
+#define RESET_PRESSED_SECONDS 5
+#define RESET_SEND_TIME 3
+#define READ_ALARM_TIME 3
+
+#define DATA_LOG_SET_CAMRA_VALUE "Thermal Sensor, \t%d, \t%d, \t-, \t-, \t-"
+#define DATA_LOG_SET_SMOKE_AND_CO_VALUE "CAN Sensor, \t%d, \t-, \t%d, \t%d, \t%d"
+#define DATA_LOG_SET_CAN_LOGIN_MESG "CAN Sensor, \t%d, \t%d, \t%d, \t%d, \t%d"
+
+#define GPIO_NAME "/dev/imx8mp-gpios"
+
+#define RS485_NAME_ttymxc0 "/dev/ttymxc0"
+#define RS485_NAME_ttymxc2 "/dev/ttymxc2"
+#define RS485_NAME_ttymxc3 "/dev/ttymxc3"
+
+#define CAN_0 0
+#define CAN_1 1
+
+#define RS485_BAUD 4800
+
+#define CONVERTER_CABINET_NO_1_FLAG 0x01
+#define CONVERTER_CABINET_NO_2_FLAG 0x02
+
+#define CONVERTER_CABINET_NO_1_FLAG_for_HKPro 0x01
+#define CONVERTER_CABINET_NO_2_FLAG_for_HKPro 0x02
+#define CONVERTER_CABINET_NO_3_FLAG_for_HKPro 0x03
+#define CONVERTER_CABINET_NO_4_FLAG_for_HKPro 0x04
+
+// For experimental use, configure two detectors.
+// The configuration file should actually be read during initialization to determine the number of detector installations in the system
+#if DEBUG_MODE
+#define INSTALLED_SD_NO 2
+#endif
+
+#define CAN0_NAME "can0"
+#define CAN0_BITRATE "83333"
+#define CAN0_BITRATE_for_TEST "100000"
+#define CAN1_NAME "can1"
+#define CAN1_BITRATE "83333"
+#define CAN1_BITRATE_for_TEST "100000"
+#define CAN_TEST_SEND_ADDRESS 0x1FFF0000
+#define CAN_TEST_RECV_ADDRESS 0x0001FFF
+
+#define ETH_NAME "eth0"
+#define ETH_IP "192.168.100.59"
+#define CCU1_IP "192.168.100.11"
+#define CCU2_IP "192.168.100.12"
+#define IO1_IP "192.168.100.16"
+#define IO2_IP "192.168.100.17"
+#define PORT_SEND1 6001 // To CCU1
+#define PORT_SEND2 6002 // To CCU2
+#define PORT_SEND3 6003 // To IO1
+#define PORT_SEND4 6004 // To IO2
+#define PORT_RECV 7000
+#define PORT_SENDTO 7000
+
+#define WATCHDOG_NAME "/dev/watchdog"
+#define WATCHDOG_TIMEOUT 60
+
+#define GW_ADDRESS "192.168.60.1"
+
+// #define FILE_PATH_LOG "/run/media/log"
+// #define FILE_LOG_MAX 20
+// #define FILE_PATH_DATA_LOG "/run/media/data_log"
+// #define FILE_DATA_LOG_MAX 20
+// #define FILE_PATH_CAN_LOGIN_DATA_LOG "/run/media/can_login_data_log"
+// #define FILE_CAN_LOGIN_DATA_LOG_MAX 20
+
+
+#define FILE_PATH_LOG "/run/media/nvme0n1p1/log"
+#define FILE_LOG_MAX 3000
+#define FILE_PATH_DATA_LOG "/run/media/nvme0n1p1/data_log"
+#define FILE_DATA_LOG_MAX 3000
+#define FILE_PATH_CAN_LOGIN_DATA_LOG "/run/media/nvme0n1p1/can_login_data_log"
+#define FILE_CAN_LOGIN_DATA_LOG_MAX 3000
+
+
+// #define FILE_PATH_LOG "/run/media/mmcblk2p3/log"
+// #define FILE_LOG_MAX 20
+// #define FILE_PATH_DATA_LOG "/run/media/mmcblk2p3/data_log"
+// #define FILE_DATA_LOG_MAX 20
+// #define FILE_PATH_CAN_LOGIN_DATA_LOG "/run/media/mmcblk2p3/can_login_data_log"
+//#define FILE_CAN_LOGIN_DATA_LOG_MAX 20
+
+#define FILE_CONFIG "/home/root/config/config.txt"
+
+// #define IP_FILE_for_CONVERTER_CABINET_1_for_A "/home/root/IPconfig/192.168.62.11/13-br0.network"
+// #define IP_FILE_for_CONVERTER_CABINET_2_for_A "/home/root/IPconfig/192.168.62.12/13-br0.network"
+// #define IP_FILE_for_CONVERTER_CABINET_1_for_B "/home/root/IPconfig/192.168.62.61/13-br0.network"
+// #define IP_FILE_for_CONVERTER_CABINET_2_for_B "/home/root/IPconfig/192.168.62.62/13-br0.network"
+
+#define IP_FILE_for_CONVERTER_CABINET_1_for_A "/home/root/IPconfig/192.168.62.11/11-eth1.network"
+#define IP_FILE_for_CONVERTER_CABINET_2_for_A "/home/root/IPconfig/192.168.62.12/11-eth1.network"
+#define IP_FILE_for_CONVERTER_CABINET_1_for_B "/home/root/IPconfig/192.168.62.61/11-eth1.network"
+#define IP_FILE_for_CONVERTER_CABINET_2_for_B "/home/root/IPconfig/192.168.62.62/11-eth1.network"
+
+// #define IP_FILE_for_CONVERTER_CABINET_1_for_A "/home/root/IPconfig/192.168.61.41/13-br0.network"
+// #define IP_FILE_for_CONVERTER_CABINET_2_for_A "/home/root/IPconfig/192.168.61.42/13-br0.network"
+// #define IP_FILE_for_CONVERTER_CABINET_1_for_A "/home/root/IPconfig/192.168.61.50/13-br0.network"
+// #define IP_FILE_for_CONVERTER_CABINET_2_for_A "/home/root/IPconfig/192.168.61.60/13-br0.network"
+
+// #define IP_FILE_LOCATION "/etc/systemd/network/13-br0.network"
+#define IP_FILE_LOCATION "/etc/systemd/network/11-eth1.network"
+
+#define TEMP_FILE "/home/root/tmp"
+
+#define CAMERA_NUM 8
+#define CAN_SENSOR_NUM 8
+
+#define BUTTON_LOWPOWER 127
+#define BUTTON_OVER12V 0
+#define BUTTON_BELOW12V 1
+#define BUTTON_PRESSED 0
+#define BUTTON_RELEASED 1
+#define LED_ON 0
+#define LED_OFF 1
+
+#define POWER_ON 1
+#define POWER_OFF 0
+
+#define SW0_CODE 0x0f
+#define SW1_CODE 0x07
+#define SW2_CODE 0x0B
+#define SW3_CODE 0x03
+#define SW4_CODE 0x0d
+
+#define EIM_IOC_MAGIC 'K'
+#define EIM_IOC_RD _IOWR(EIM_IOC_MAGIC, 0, int)
+#define EIM_IOC_WR _IOWR(EIM_IOC_MAGIC, 1, int)
+
+/*gpio=(chip-1)*32+offset*/
+// DO GPIO
+#define GPIO2_IO01 0 // DO1
+#define GPIO4_IO24 1 // DO2
+#define GPIO2_IO07 2 // DO3
+#define GPIO5_IO20 3 // PWR1_OUT
+#define GPIO4_IO30 4 // PWR2_OUT
+#define GPIO1_IO08 5 // 24V power
+
+#define GPIO5_IO00 6  // D3(run)
+#define GPIO5_IO01 8  // D1(fault)
+#define GPIO4_IO28 9  // D5(alarm)
+#define GPIO2_IO08 10 // D6(extinguish)
+#define GPIO2_IO09 11 // D7(miantance)
+#define GPIO4_IO25 12 // D8(reserved)
+
+#define GPIO1_IO07 13 // can EN
+#define GPIO1_IO11 14 // can STB
+
+// DI GPIO
+#define GPIO5_IO12 15 // DI1
+#define GPIO5_IO10 16 // PWR1_OUT_Fault
+#define GPIO5_IO11 17 // PWR2_OUT_Fault
+#define GPIO5_IO21 18 // DI5 power reset
+#define GPIO4_IO29 19 // DO1_FD
+#define GPIO2_IO00 20 // DO1_OPEN
+#define GPIO3_IO26 21 // can1 ERR
+#define GPIO4_IO04 22 // can2 ERR
+
+#define GPIO2_IO04 23 // Rotating dial switch
+#define GPIO5_IO13 24 // Rotating dial switch
+#define GPIO1_IO05 25 // Rotating dial switch
+#define GPIO2_IO06 26 // Rotating dial switch
+
+#define SW1 GPIO2_IO04
+#define SW2 GPIO5_IO13
+#define SW3 GPIO1_IO05
+#define SW4 GPIO2_IO06
+
+#define LED_FAULT GPIO5_IO01
+#define LED_SYSTEM_RUN GPIO5_IO00
+#define LED_FIRE_ARLAM GPIO4_IO28
+#define LED_FIRE_EXTINGUISH GPIO2_IO08
+#define LED_MAINTENANCE GPIO2_IO09
+#define LED_RESERVE GPIO4_IO25
+
+#define BUTTON_REBOOT GPIO5_IO21
+#define EXTINGUISH_ACK GPIO5_IO12
+#define OPEN_CIRCUIT GPIO2_IO00
+
+#define CAMERA_DC24V_POWER_SUPPLY GPIO1_IO08
+#define DC24V_POWER_SUPPLY_1 GPIO4_IO30
+#define DC24V_POWER_SUPPLY_2 GPIO5_IO20
+#define DC24V_POWER_SUPPLY_1_FAULT GPIO5_IO11
+#define DC24V_POWER_SUPPLY_2_FAULT GPIO5_IO10
+
+#define FIRE_EXTINGUISH_A1 GPIO2_IO01
+#define FIRE_EXTINGUISH_A2 GPIO4_IO24
+
+#define CAN_EN GPIO1_IO07
+#define CAN_STB GPIO1_IO11
+
+#define PRIO_TASK_CAN_SD 12
+#define PRIO_TASK_CAN_RE 12
+#define PRIO_TASK_ETH_SEND 12
+#define PRIO_TASK_ETH_RECV 12
+#define PRIO_TASK_ETH_for_6A_SEND 12
+#define PRIO_TASK_ETH_for_6A_RECV 12
+#define PRIO_TASK_ETH_for_6A_RECV_MUTICAST 12
+#define PRIO_TASK_GPIO 12
+#define PRIO_TASK_DIDO 12
+#define PRIO_TASK_CTRL 12
+#define PRIO_TASK_RS485 12
+#define PRIO_TASK_REBOOT 12
+#define PRIO_TASK_AI 12
+#define PRIO_TASK_TEST 12
+#define PRIO_TASK_DC_POWER_SUPPLY 12
+#define PRIO_TASK_FIRE_EXTINGUISHING 12
+#define PRIO_TASK_FIRE_EXTINGUISHING_ACK 12
+#define PRIO_TASK_PRESS_DETECT 12
+#define PRIO_TASK_OPEN_CIRCUIT_DETECT 12
+#define PRIO_TASK_SMOKE_RS485_DETECT_SEND 12
+#define PRIO_TASK_SMOKE_RS485_DETECT_RECV 12
+#define PRIO_TASK_CAN_SMOKE_SENSOR_DETECT_SEND 12
+#define PRIO_TASK_CAN_SMOKE_SENSOR_DETECT_RECV 12
+#define PRIO_TASK_CAN_OPENCIRCUIT_DETECT_RECV 12
+#define PRIO_TASK_CAN_SHORTCIRCUIT_DETECT_RECV 12
+#define PRIO_TASK_PRESS_DETECT_RECV 12
+#define PRIO_TASK_CAN_OPENCIRCUIT_DETECT_SEND 12
+#define PRIO_TASK_DIP_SWITCH 12
+#define PRIO_TASK_CAN_SMOKE_SENSOR_CTRL 12
+#define PRIO_TASK_CAN_SEND 12
+
+#define DEVICE_CODE 59
+#define FACTORY_CODE 0x01
+
+#define BACKTRACE_SIZE 16
+
+#define PRESS_EJECTION_VAL 4.2
+
+typedef enum manufacturer_code
+{
+	JI_NAN_RUO_LIN = 4,
+	XI_AN_KAI_TIAN = 9,
+	BEI_JING_RUI_HAO = 11,
+	DA_LIAN_SUO = 12,
+	CHENG_DU_YUN_DA = 13,
+	LAN_TIAN_DUO_WEI = 14,
+	SHENG_SHI_GAO_KE = 15,
+	TIAN_JING_HANG_LIAN = 16
+} MANUFACTURER_CODE;
+
+typedef enum error_code
+{
+	ERROR = 0,
+	ERROR_SIGNAL_INIT,
+	ERROR_CONFIG_INIT,
+	ERROR_GPIO_OPEN,
+	ERROR_GPIO_INIT,
+	ERROR_CAN_NAME_WRONG,
+	ERROR_CAN_SET_UP,
+	ERROR_CAN_SET_DOWN,
+	ERROR_CAN_CREATE_SOCKET,
+	ERROR_CAN_IOCTL,
+	ERROR_CAN_BIND,
+	ERROR_CAN_FCNTL_GET,
+	ERROR_CAN_FCNTL_SET,
+	ERROR_CAN_INIT,
+	ERROR_ETH_RECV_INIT,
+	ERROR_ETH_SEND_to_HKPro_INIT,
+	ERROR_ETH_SEND_to_6A_INIT,
+	ERROR_ETH_RECV_from_6A_INIT,
+	ERROR_ETH_MUTICAST_INIT,
+	ERROR_WATCHDOG_INIT,
+	ERRPR_DIP_INIT,
+	ERROR_THREAD_CREAT,
+	ERROR_THREAD_INIT,
+	ERROR_THREAD_TEST_CREAT,
+	ERROR_THREAD_TEST,
+	ERROR_SRIALCOMM_INIT,
+	ERROR_SRIALCOMM_OPEN,
+	ERROR_AI_INIT,
+	ERROR_EXTINGUISH_ACK,
+	ERROR_THREAD_REBOOT,
+	ERROR_THREAD_GPIO,
+	ERROR_THREAD_POWER_SUPPLY,
+	ERROR_THREAD_FIRE_EXTINGUISHING,
+	ERROR_THREAD_FIRE_EXTINGUISHING_ACK,
+	ERROR_THREAD_PRESS_DETECT,
+	ERROR_THREAD_OPEN_CIRCUIT_DETECT,
+	ERROR_THREAD_SMOKE_RS485_DETECT_SEND,
+	ERROR_THREAD_SMOKE_RS485_DETECT_RECV,
+	ERROR_THREAD_SMOKE_CAN_SENSOR_DETECT_SEND,
+	ERROR_THREAD_CAN_SMOKE_SENSOR_DETECT_RECV,
+	ERROR_THREAD_CAN_SHORTCIRCUIT_DETECT,
+	ERROR_THREAD_CAN_OPENCIRCUIT_DETECT_RECV,
+	ERROR_THREAD_CAN_OPENCIRCUIT_DETECT_SEND,
+	ERROR_THREAD_DIP_SWITCH,
+	ERROR_THREAD_CAN_SMOKE_SENSOR_CTRL,
+	ERROR_DATA_LOG_INIT,
+	ERROR_CAN_LOGIN_LOG_INIT,
+	ERROR_NET_COMMUNICATION,
+	ERROR_MEMORY_ALLOCATION,
+	ERROR_CAN_SEND,
+} ERROR_CODE;
+
+typedef enum led_status
+{
+	ALARM_LED_NORMAL = 0,
+	ALARM_LED_ALARM,
+	FAULT_OPEN_CIRCUIT_LED_NORMAL,
+	FAULT_OPEN_CIRCUIT_LED_ALARM,
+	FAULT_CAN_OPEN_CIRCUIT_LED_NORMAL,
+	FAULT_CAN_OPEN_CIRCUIT_LED_ALARM,
+	FAULT_CAN_SHORT_CIRCUIT_LED_NORMAL,
+	FAULT_CAN_SHORT_CIRCUIT_LED_ALARM,
+	FAULT_POWER_OPEN_CIRCUIT_LED_NORMAL,
+	FAULT_POWER_OPEN_CIRCUIT_LED_ALARM,
+	FAULT_POWER_SHORT_CIRCUIT_LED_NORMAL,
+	FAULT_POWER_SHORT_CIRCUIT_LED_ALARM,
+	FAULT_UNDERPRESURE_LED_NORMAL,
+	FAULT_UNDERPRESURE_LED_ALARM,
+	FAULT_EXTINGUISH_ACK_LED_NORMAL,
+	FAULT_EXTINGUISH_ACK_LED_ALARM,
+	FAULT_TRANSMITTER_NORMAL,
+	FAULT_TRANSMITTER_ALARM,
+	MAINTANCE_LED_NORMAL,
+	MAINTENANCE_LED_ALARM,
+	EXTINGUISHING_LED_NORMAL,
+	EXTINGUISHING_LED_ALARM
+} LED_STATUS;
+
+typedef enum sd_type
+{
+	SD_TYPE_UNINSTALL,
+	SD_TYPE_MULTI,
+	SD_TYPE_CABLE
+} SD_TYPE;
+
+typedef enum sd_status
+{
+	SD_STATUS_OFFLINE,
+	SD_STATUS_NORMAL,
+	SD_STATUS_FAULT,
+	SD_STATUS_ALARM,
+	SD_STATUS_FLAME,
+	SD_STATUS_ISOLATED
+} SD_STATUS;
+
+typedef enum message_type
+{
+	TYPE_FH = 0x81,
+	TYPE_PUBLIC = 0x01,
+	TYPE_VERSION = 0x02,
+	TYPE_TIME = 0x03,
+	TYPE_IO = 0x72
+} MESSAGE_TYPE;
+
+typedef enum io_ctrl
+{
+	IO_TYPE_ON = 0x01,
+	IO_TYPP_OFF = 0x02,
+	IO_DEVICE_FH = 0x02,
+	IO_ON_REQUEST = 0x01,
+	IO_ON_ACK = 0x02,
+	IO_ON_CONFIRM = 0x03,
+	IO_ON_EXECUTE = 0x04,
+	IO_OFF_REQUEST = 0x10,
+	IO_OFF_ACK = 0x20,
+	IO_OFF_CONFIRM = 0x30,
+	IO_OFF_EXECUTE = 0x40
+} IO_CTRL;
+
+typedef enum comm_type
+{
+	COMM_ETH = 0x01,
+	COMM_CAN = 0x02,
+} COMM_TYPE;
+
+typedef enum all_package_length
+{
+	LENGTH_SD = 8,
+	LENGTH_FH = 32,
+	LENGTH_PUBLIC = 64,
+	LENGTH_VERSION = 32,
+	LENGTH_TIME = 29,
+	LENGTH_IO = 32
+} ALL_PACKAGE_LENGTH;
+
+typedef enum comm_link
+{
+	CCU1_ETH,
+	CCU2_ETH,
+	CCU1_CAN,
+	CCU2_CAN
+} COMM_LINK;
+
+typedef enum can_id_type
+{
+	CAN_ID_TYPE_SINGLE,
+	CAN_ID_TYPE_FIRST,
+	CAN_ID_TYPE_MIDDLE,
+	CAN_ID_TYPE_LAST
+} CAN_ID_TYPE;
+
+typedef enum can_id_ack
+{
+	CAN_ID_ACK_NO,
+	CAN_ID_ACK_REQUEST,
+	CAN_ID_ACK_RESPONSE
+} CAN_ID_ACK;
+
+typedef enum can_device
+{
+	CAN_DEVICE_CCU1 = 11,
+	CAN_DEVICE_CCU2 = 12,
+	CAN_DEVICE_IO1 = 16,
+	CAN_DEVICE_IO2 = 17,
+	CAN_DEVICE_FH = 29
+} CAN_DEVICE;
+
+typedef enum can_sd_id_command
+{
+	CAN_SD_ID_SEND,
+	CAN_SD_ID_ACK_CONFIG,
+	CAN_SD_ID_ACK_REALTIME,
+	CAN_SD_ID_ACK_ALARMTIME
+} CAN_SD_ID_COMMAND;
+
+#endif /* GLOBALDEFINE_H_ */

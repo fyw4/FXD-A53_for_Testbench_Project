@@ -203,6 +203,8 @@ unistd.h
 -
 stdlib.h
 -
+pthread.h
+-
 globaldefine.h
 /mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/src/globaldefine.h
 globalvariable.h

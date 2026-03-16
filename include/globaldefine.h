@@ -8,15 +8,14 @@
 #ifndef GLOBALDEFINE_H_
 #define GLOBALDEFINE_H_
 
-#define SOFTWARE_VERSION_NUMBER 130	 // 1 = 0.01
+#define SOFTWARE_VERSION_NUMBER 100	 // 1 = 0.01
 #define SOFTWARE_VERSION_LETTER 0x41 // 0x41 = A
 #define HARDWARE_VERSION_NUMBER 1	 // 1 = 0.01
 #define HARDWARE_VERSION_LETTER 0x41 // 0x41 = A
 
 #define INNER_VERSION_NUMBER_X 1
-#define INNER_VERSION_NUMBER_Y 3
+#define INNER_VERSION_NUMBER_Y 0
 #define INNER_VERSION_NUMBER_Z 0
-#define INNER_VERSION_NUMBER_Z_1 0
 
 // #define TEST_MODE 1
 #define DEBUG_MODE 1
@@ -53,6 +52,8 @@
 #define CONVERTER_CABINET_NO_2_FLAG_for_HKPro 0x02
 #define CONVERTER_CABINET_NO_3_FLAG_for_HKPro 0x03
 #define CONVERTER_CABINET_NO_4_FLAG_for_HKPro 0x04
+#define CONVERTER_CABINET_NO_5_FLAG_for_HKPro 0x05
+#define CONVERTER_CABINET_NO_6_FLAG_for_HKPro 0x06
 
 // For experimental use, configure two detectors.
 // The configuration file should actually be read during initialization to determine the number of detector installations in the system
@@ -67,7 +68,7 @@
 #define CAN1_BITRATE "83333"
 #define CAN1_BITRATE_for_TEST "100000"
 #define CAN_TEST_SEND_ADDRESS 0x1FFF0000
-#define CAN_TEST_RECV_ADDRESS 0x0001FFF
+#define CAN_TEST_RECV_ADDRESS 0x00001FFF
 
 #define ETH_NAME "eth0"
 #define ETH_IP "192.168.100.59"
@@ -112,20 +113,12 @@
 
 #define FILE_CONFIG "/home/root/config/config.txt"
 
-// #define IP_FILE_for_CONVERTER_CABINET_1_for_A "/home/root/IPconfig/192.168.62.11/13-br0.network"
-// #define IP_FILE_for_CONVERTER_CABINET_2_for_A "/home/root/IPconfig/192.168.62.12/13-br0.network"
-// #define IP_FILE_for_CONVERTER_CABINET_1_for_B "/home/root/IPconfig/192.168.62.61/13-br0.network"
-// #define IP_FILE_for_CONVERTER_CABINET_2_for_B "/home/root/IPconfig/192.168.62.62/13-br0.network"
-
 #define IP_FILE_for_CONVERTER_CABINET_1_for_A "/home/root/IPconfig/192.168.62.11/11-eth1.network"
 #define IP_FILE_for_CONVERTER_CABINET_2_for_A "/home/root/IPconfig/192.168.62.12/11-eth1.network"
 #define IP_FILE_for_CONVERTER_CABINET_1_for_B "/home/root/IPconfig/192.168.62.61/11-eth1.network"
 #define IP_FILE_for_CONVERTER_CABINET_2_for_B "/home/root/IPconfig/192.168.62.62/11-eth1.network"
-
-// #define IP_FILE_for_CONVERTER_CABINET_1_for_A "/home/root/IPconfig/192.168.61.41/13-br0.network"
-// #define IP_FILE_for_CONVERTER_CABINET_2_for_A "/home/root/IPconfig/192.168.61.42/13-br0.network"
-// #define IP_FILE_for_CONVERTER_CABINET_1_for_A "/home/root/IPconfig/192.168.61.50/13-br0.network"
-// #define IP_FILE_for_CONVERTER_CABINET_2_for_A "/home/root/IPconfig/192.168.61.60/13-br0.network"
+#define IP_FILE_for_CONVERTER_CABINET_1_for_C "/home/root/IPconfig/192.168.62.111/11-eth1.network"
+#define IP_FILE_for_CONVERTER_CABINET_2_for_C "/home/root/IPconfig/192.168.62.112/11-eth1.network"
 
 // #define IP_FILE_LOCATION "/etc/systemd/network/13-br0.network"
 #define IP_FILE_LOCATION "/etc/systemd/network/11-eth1.network"
@@ -135,11 +128,6 @@
 #define CAMERA_NUM 8
 #define CAN_SENSOR_NUM 8
 
-#define BUTTON_LOWPOWER 127
-#define BUTTON_OVER12V 0
-#define BUTTON_BELOW12V 1
-#define BUTTON_PRESSED 0
-#define BUTTON_RELEASED 1
 #define LED_ON 0
 #define LED_OFF 1
 
@@ -320,6 +308,7 @@ typedef enum error_code
 	ERROR_NET_COMMUNICATION,
 	ERROR_MEMORY_ALLOCATION,
 	ERROR_CAN_SEND,
+	ERRPR_GPIO_DO_INIT,
 } ERROR_CODE;
 
 typedef enum led_status

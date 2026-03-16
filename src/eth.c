@@ -1,7 +1,7 @@
 /*
  * eth.c
  *
- *  Created on: 2023.10.23
+ *  Created on: 2026.3.5
  *      Author: Wang Chyng-chuan
  */
 #include <stdio.h>
@@ -26,8 +26,8 @@ void thread_eth_server()
     int flag = 0;
     int i = 0, fd = 0, ret = 0, recv_len = 0;
     char buf[1200] = {0};
-    struct sockaddr_in myaddr;
-    struct sockaddr_in cliaddr;
+    struct sockaddr_in recv_addr = {0};
+
     DATA_DOUBLE_SEP accumulate_check;
 
     fd = socket(AF_INET, SOCK_DGRAM, 0);
@@ -39,10 +39,13 @@ void thread_eth_server()
     flag = fcntl(fd, F_GETFL, 0);
     fcntl(fd, F_SETFL, flag | O_NONBLOCK); // nonblock
 
+    struct sockaddr_in myaddr = {0};
+    socklen_t addr_len = sizeof(struct sockaddr);
     myaddr.sin_family = AF_INET;
+    myaddr.sin_addr.s_addr = htonl(INADDR_ANY);
     myaddr.sin_port = htons(SERVER_PORT);
-    myaddr.sin_addr.s_addr = inet_addr(IP_LOCAL_ADDRESS);
-    ret = bind(fd, (struct sockaddr *)&myaddr, sizeof(myaddr));
+
+    ret = bind(fd, (struct sockaddr *)&myaddr, addr_len);
     if (ret < 0)
     {
         perror("thread_eth_server:bind error");
@@ -50,8 +53,6 @@ void thread_eth_server()
         close(fd);
         return;
     }
-
-    socklen_t len = sizeof(cliaddr);
 
     while (1)
     {
@@ -61,19 +62,23 @@ void thread_eth_server()
             continue;
         }
 
-        if ((recv_len = recvfrom(fd, buf, sizeof(buf), 0, (struct sockaddr *)&cliaddr, &len)) > 0)
+        if ((recv_len = recvfrom(fd, buf, sizeof(buf), 0, (struct sockaddr *)&recv_addr, &addr_len)) > 0)
         {
             if (buf[0] == 0xAA && buf[1] == 0xAA)
             {
-                memcpy(&accumulate_check, &buf[2], sizeof(DATA_DOUBLE_SEP));
+                memcpy(&accumulate_check, &buf[18], sizeof(DATA_DOUBLE_SEP));
                 if (accumulate_check.val_dec == checksum((unsigned char *)buf, recv_len - 2))
                 {
                     extinguish_info_message_to_Workbench->workbench_command_byte_NO_1 = buf[5];
                     extinguish_info_message_to_Workbench->workbench_command_byte_NO_2 = buf[6];
                 }
+
+                for (int i = 0; i < recv_len; i++)
+                    printf("%02x ", buf[i]);
+                printf("\n");
             }
         }
-        usleep(100000); // 100ms
+        sleep(1);
     }
 
     close(fd);
@@ -93,28 +98,28 @@ void thread_eth_client()
     struct sockaddr_in dstaddr;
     dstaddr.sin_family = AF_INET;
     dstaddr.sin_port = htons(CLIENT_PORT);
-    dstaddr.sin_addr.s_addr = inet_addr(IP_LOCAL_ADDRESS);
+    dstaddr.sin_addr.s_addr = inet_addr(IP_Wrokbench_Address);
 
     unsigned char send_buff_to_Workbench[FROM_WORKBENCH_MESSAGE_LEN] = {0};
     extinguish_info_message_to_Workbench = (EXTINGUISH_INFO_MESSAGE_to_Workbench *)malloc(sizeof(EXTINGUISH_INFO_MESSAGE_to_Workbench));
+    memset(extinguish_info_message_to_Workbench, 0, sizeof(EXTINGUISH_INFO_MESSAGE_to_Workbench));
     unsigned char lifecount = 0x00;
     DATA_DOUBLE_SEP check;
 
     extinguish_info_message_to_Workbench->header.header_l = 0xAA;
     extinguish_info_message_to_Workbench->header.header_h = 0xAA;
     extinguish_info_message_to_Workbench->len = 0x14;
+    extinguish_info_message_to_Workbench->flag = 0x02;
 
     while (1)
     {
         extinguish_info_message_to_Workbench->life_count = lifecount++;
-        if(lifecount >= 0xFF)
+        if (lifecount >= 0xFF)
         {
             lifecount = 0x00;
         }
-        extinguish_info_message_to_Workbench->workbench_command_byte_NO_1 = 0x00;
-        extinguish_info_message_to_Workbench->workbench_command_byte_NO_2 = 0x00;
-        memset(&extinguish_info_message_to_Workbench->reserved[0], 0, 5);
 
+        memset(send_buff_to_Workbench, 0, sizeof(send_buff_to_Workbench));
         memcpy(send_buff_to_Workbench, extinguish_info_message_to_Workbench, sizeof(EXTINGUISH_INFO_MESSAGE_to_Workbench));
         check.val_dec = checksum((unsigned char *)send_buff_to_Workbench, FROM_WORKBENCH_MESSAGE_LEN - 2);
         send_buff_to_Workbench[FROM_WORKBENCH_MESSAGE_LEN - 2] = check.val_chr[0];
@@ -125,6 +130,10 @@ void thread_eth_client()
         {
             perror("thread_eth_client send fail!\r\n");
         }
+
+        for (int i = 0; i < send_len; i++)
+            printf("%02x ", send_buff_to_Workbench[i]);
+        printf("\n");
 
         sleep(1);
     }

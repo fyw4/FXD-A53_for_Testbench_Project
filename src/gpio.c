@@ -89,6 +89,17 @@ size_t getFileSize(const char *fileName)
     return filesize;
 }
 
+void set_bit(unsigned char *byte, int bit)
+{
+    *byte |= (1 << bit);
+}
+
+// ??3y???¡§???a0
+void clear_bit(unsigned char *byte, int bit)
+{
+    *byte &= ~(1 << bit);
+}
+
 void thread_func_gpio()
 {
     while (1)
@@ -101,56 +112,56 @@ void thread_func_gpio()
 
         if (extinguish_info_message_to_Workbench->workbench_command_byte_NO_1 >> 0 & 0x01)
         {
-            set_gpio_status(FIRE_EXTINGUISH_A1, LED_ON);
+            set_gpio_status(FIRE_EXTINGUISH_A1, POWER_ON);
         }
         else
         {
-            set_gpio_status(FIRE_EXTINGUISH_A1, LED_OFF);
+            set_gpio_status(FIRE_EXTINGUISH_A1, POWER_OFF);
         }
 
         if (extinguish_info_message_to_Workbench->workbench_command_byte_NO_1 >> 1 & 0x01)
         {
-            set_gpio_status(FIRE_EXTINGUISH_A2, LED_ON);
+            set_gpio_status(FIRE_EXTINGUISH_A2, POWER_ON);
         }
         else
         {
-            set_gpio_status(FIRE_EXTINGUISH_A2, LED_OFF);
+            set_gpio_status(FIRE_EXTINGUISH_A2, POWER_OFF);
         }
 
-        if (extinguish_info_message_to_Workbench->workbench_command_byte_NO_1 >> 2 & 0x01)
+        if (extinguish_info_message_to_Workbench->workbench_command_byte_NO_1 >> 4 & 0x01)
         {
-            set_gpio_status(GPIO2_IO07, LED_ON);
+            set_gpio_status(GPIO2_IO07, POWER_ON);
         }
         else
         {
-            set_gpio_status(GPIO2_IO07, LED_OFF);
+            set_gpio_status(GPIO2_IO07, POWER_OFF);
         }
 
         if (extinguish_info_message_to_Workbench->workbench_command_byte_NO_1 >> 5 & 0x01)
         {
-            set_gpio_status(CAMERA_DC24V_POWER_SUPPLY, LED_ON);
+            set_gpio_status(CAMERA_DC24V_POWER_SUPPLY, POWER_ON);
         }
         else
         {
-            set_gpio_status(CAMERA_DC24V_POWER_SUPPLY, LED_OFF);
+            set_gpio_status(CAMERA_DC24V_POWER_SUPPLY, POWER_OFF);
         }
 
         if (extinguish_info_message_to_Workbench->workbench_command_byte_NO_1 >> 6 & 0x01)
         {
-            set_gpio_status(DC24V_POWER_SUPPLY_1, LED_ON);
+            set_gpio_status(DC24V_POWER_SUPPLY_1, POWER_ON);
         }
         else
         {
-            set_gpio_status(DC24V_POWER_SUPPLY_1, LED_OFF);
+            set_gpio_status(DC24V_POWER_SUPPLY_1, POWER_OFF);
         }
 
         if (extinguish_info_message_to_Workbench->workbench_command_byte_NO_1 >> 7 & 0x01)
         {
-            set_gpio_status(DC24V_POWER_SUPPLY_2, LED_ON);
+            set_gpio_status(DC24V_POWER_SUPPLY_2, POWER_ON);
         }
         else
         {
-            set_gpio_status(DC24V_POWER_SUPPLY_2, LED_OFF);
+            set_gpio_status(DC24V_POWER_SUPPLY_2, POWER_OFF);
         }
 
         // system run LED
@@ -213,123 +224,59 @@ void thread_func_gpio()
             set_gpio_status(LED_RESERVE, LED_OFF);
         }
 
-        extinguish_info_message_to_Workbench->self_status_byte_NO_1 |= (get_gpio_status(EXTINGUISH_ACK) & 0x01) << 0;
-        extinguish_info_message_to_Workbench->self_status_byte_NO_1 |= (get_gpio_status(OPEN_CIRCUIT) & 0x01) << 3;
-
-        extinguish_info_message_to_Workbench->self_status_byte_NO_2 |= (get_gpio_status(BUTTON_REBOOT) & 0x01) << 0;
-        extinguish_info_message_to_Workbench->self_status_byte_NO_2 |= (get_gpio_status(DC24V_POWER_SUPPLY_1_FAULT) & 0x01) << 1;
-        extinguish_info_message_to_Workbench->self_status_byte_NO_2 |= (get_gpio_status(DC24V_POWER_SUPPLY_2_FAULT) & 0x01) << 2;
-
-        sw_choose |= get_gpio_status(SW1) << 3;
-        sw_choose |= get_gpio_status(SW2) << 2;
-        sw_choose |= get_gpio_status(SW3) << 1;
-        sw_choose |= get_gpio_status(SW4) << 0;
-        extinguish_info_message_to_Workbench->sw_choose_val = sw_choose;
-
-        usleep(500000);
-    }
-
-    return;
-}
-
-void fire_reboot_and_reset_handle()
-{
-    global_count++;
-    if (global_count > 255)
-    {
-        global_count = LOGIN_WAIT_TIME_MIN;
-    }
-
-    return;
-}
-
-void fire_reboot_and_reset_timer_init()
-{
-    struct sigevent sig_event;
-    struct sigaction sig_act;
-
-    sigemptyset(&sig_act.sa_mask);
-    sig_act.sa_flags = 0;
-    sig_act.sa_handler = fire_reboot_and_reset_handle;
-    if (sigaction(SIGRTMAX - 2, &sig_act, NULL) < 0)
-    {
-        return;
-    }
-
-    sig_event.sigev_notify = SIGEV_SIGNAL;
-    sig_event.sigev_signo = SIGRTMAX - 2;
-    if (timer_create(CLOCK_REALTIME, &sig_event, &global_reboot_and_reset_timer_id) < 0)
-    {
-        return;
-    }
-
-    return;
-}
-
-void fire_interval_timer_set(timer_t *timer_id, int time)
-{
-    struct itimerspec timer_setting;
-    timer_setting.it_value.tv_sec = time;
-    timer_setting.it_value.tv_nsec = 0;
-    timer_setting.it_interval.tv_sec = time;
-    timer_setting.it_interval.tv_nsec = 0;
-    if (timer_settime(*timer_id, 0, &timer_setting, NULL) < 0)
-    {
-        return;
-    }
-
-    return;
-}
-
-void thread_func_reboot()
-{
-    int count_flag = 0;
-    int reboot_flag = 0;
-
-    fire_reboot_and_reset_timer_init();
-    while (1)
-    {
-        if (!get_gpio_status(BUTTON_REBOOT))
+        // extinguish_info_message_to_Workbench->self_status_byte_NO_1
+        if (get_gpio_status(EXTINGUISH_ACK))
         {
-            if (0 == count_flag)
-            {
-                fire_interval_timer_set(&global_reboot_and_reset_timer_id, COUNT_TIME);
-                count_flag = 1;
-            }
+            set_bit(&extinguish_info_message_to_Workbench->self_status_byte_NO_1, 0);
         }
         else
         {
-            count_flag = 0;
-            fire_interval_timer_set(&global_reboot_and_reset_timer_id, 0);
-
-            if (REBOOT_WAIT_TIME_MIN <= global_count && global_count < LOGIN_WAIT_TIME_MIN) // reboot time effective value: 0.5s~5s
-            {
-                if (0 == reboot_flag)
-                {
-                    _CCU_LOG_("Reboot button pressed!");
-                    reboot_flag = 1;
-                    raise(SIGRTMAX);
-                }
-            }
-            else if (LOGIN_WAIT_TIME_MIN <= global_count) // login time effective value: >= 5s
-            {
-                if (0 == reboot_flag)
-                {
-                    can_login_flag = 1;
-                    _CCU_LOG_("Login detect and reboot !");
-
-                    set_LED();
-
-                    reboot_flag = 1;
-                }
-            }
-            else
-            {
-                global_count = 0;
-            }
+            clear_bit(&extinguish_info_message_to_Workbench->self_status_byte_NO_1, 0);
         }
 
-        usleep(100000); // 100ms
+        if (get_gpio_status(OPEN_CIRCUIT))
+        {
+            set_bit(&extinguish_info_message_to_Workbench->self_status_byte_NO_1, 3);
+        }
+        else
+        {
+            clear_bit(&extinguish_info_message_to_Workbench->self_status_byte_NO_1, 3);
+        }
+
+         // extinguish_info_message_to_Workbench->self_status_byte_NO_2
+        if (!get_gpio_status(BUTTON_REBOOT))
+        {
+            set_bit(&extinguish_info_message_to_Workbench->self_status_byte_NO_2, 0);
+        }
+        else
+        {
+            clear_bit(&extinguish_info_message_to_Workbench->self_status_byte_NO_2, 0);
+        }
+
+        if (get_gpio_status(DC24V_POWER_SUPPLY_1_FAULT))
+        {
+            set_bit(&extinguish_info_message_to_Workbench->self_status_byte_NO_2, 1);
+        }
+        else
+        {
+            clear_bit(&extinguish_info_message_to_Workbench->self_status_byte_NO_2, 1);
+        }
+
+        if (get_gpio_status(DC24V_POWER_SUPPLY_2_FAULT))
+        {
+            set_bit(&extinguish_info_message_to_Workbench->self_status_byte_NO_2, 2);
+        }
+        else
+        {
+            clear_bit(&extinguish_info_message_to_Workbench->self_status_byte_NO_2, 2);
+        }
+
+        extinguish_info_message_to_Workbench->sw_choose_val = get_gpio_status(SW1) << 3 |
+                                                              get_gpio_status(SW2) << 2 |
+                                                              get_gpio_status(SW3) << 1 |
+                                                              get_gpio_status(SW4) << 0;
+
+        sleep(1);
     }
 
     return;
@@ -370,6 +317,22 @@ void thread_func_power_supply()
     }
 
     return;
+}
+
+int init_GPIO_DO()
+{
+    set_gpio_status(FIRE_EXTINGUISH_A1, POWER_OFF);
+    set_gpio_status(FIRE_EXTINGUISH_A2, POWER_OFF);
+    set_gpio_status(CAMERA_DC24V_POWER_SUPPLY, POWER_OFF);
+    set_gpio_status(DC24V_POWER_SUPPLY_1, POWER_OFF);
+    set_gpio_status(DC24V_POWER_SUPPLY_2, POWER_OFF);
+    set_gpio_status(LED_SYSTEM_RUN, LED_OFF);
+    set_gpio_status(LED_FAULT, LED_OFF);
+    set_gpio_status(LED_FIRE_ARLAM, LED_OFF);
+    set_gpio_status(LED_FIRE_EXTINGUISH, LED_OFF);
+    set_gpio_status(LED_MAINTENANCE, LED_OFF);
+    set_gpio_status(LED_RESERVE, LED_OFF);
+    return 0;
 }
 
 int init_DIP_switch()

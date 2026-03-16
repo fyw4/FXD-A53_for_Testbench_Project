@@ -175,15 +175,6 @@ int init_thread()
 		return EXIT_FAILURE;
 	}
 
-	param.__sched_priority = PRIO_TASK_REBOOT;
-	pthread_attr_setschedparam(&attr, &param);
-	ret_pthread_func_reboot_create = pthread_create(&id_reboot, &attr, (void *)thread_func_reboot, NULL);
-	if (ret_pthread_func_reboot_create != 0)
-	{
-		_CCU_ERROR_(ERROR_THREAD_REBOOT, "thread_func_reboot");
-		return EXIT_FAILURE;
-	}
-
 	param.__sched_priority = PRIO_TASK_DC_POWER_SUPPLY;
 	pthread_attr_setschedparam(&attr, &param);
 	ret_pthread_DC_power_supply_create = pthread_create(&id_DC_power_supply, &attr, (void *)thread_func_power_supply, NULL);
@@ -244,26 +235,17 @@ int main(void)
 	if (init_config(FILE_CONFIG))
 		_CCU_ERROR_(ERROR_CONFIG_INIT, FILE_CONFIG);
 
-	// Init gpio
 	_CCU_LOG_("Init GPIO start.");
 	if (init_gpio(GPIO_NAME))
 		_CCU_ERROR_(ERROR_GPIO_INIT, GPIO_NAME);
 
 	// Init can
 	_CCU_LOG_("Init Can device start.");
-#if TEST_MODE
-	if (init_can(CAN1_NAME, CAN1_BITRATE_for_TEST))
-		_CCU_ERROR_(ERROR_CAN_INIT, CAN1_NAME);
-
-	if (init_can(CAN0_NAME, CAN0_BITRATE_for_TEST))
-		_CCU_ERROR_(ERROR_CAN_INIT, CAN0_NAME);
-#else
 	if (init_can(CAN1_NAME, CAN1_BITRATE))
 		_CCU_ERROR_(ERROR_CAN_INIT, CAN1_NAME);
 
 	if (init_can(CAN0_NAME, CAN0_BITRATE))
 		_CCU_ERROR_(ERROR_CAN_INIT, CAN0_NAME);
-#endif
 
 	// Init watchdog
 	_CCU_LOG_("Init watchdog start.");
@@ -274,6 +256,10 @@ int main(void)
 	_CCU_LOG_("Init IP set start.");
 	if (init_DIP_switch())
 		_CCU_ERROR_(ERRPR_DIP_INIT, "Init IP set ERROR");
+
+	_CCU_LOG_("Init GPIO DO set start.");
+	if (init_GPIO_DO())
+		_CCU_ERROR_(ERRPR_GPIO_DO_INIT, "Init GPIO DO set ERROR");
 
 	sleep(5); // wait for eth_converter_cabinet_No setting
 

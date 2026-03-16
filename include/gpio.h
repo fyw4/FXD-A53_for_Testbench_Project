@@ -29,6 +29,8 @@ void thread_func_gpio();
 
 void thread_func_power_supply();
 
+int init_GPIO_DO();
+
 int init_DIP_switch();
 
 #endif

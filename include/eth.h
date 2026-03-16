@@ -8,8 +8,8 @@
 #ifndef ETH_H_
 #define ETH_H_
 
-#define SERVER_PORT 8080
-#define CLIENT_PORT 8000
+#define SERVER_PORT 7000
+#define CLIENT_PORT 7000
 
 #define IP_LOCAL_ADDRESS "127.0.0.1"
 #define IP_CONVERTER_CABINET_NO_A_1_ADDRESS "192.168.62.11"
@@ -17,15 +17,26 @@
 #define IP_CONVERTER_CABINET_NO_B_1_ADDRESS "192.168.62.61"
 #define IP_CONVERTER_CABINET_NO_B_2_ADDRESS "192.168.62.62"
 
+#define IP_BATTERY_CABINET_NO_A_1_ADDRESS "192.168.62.16"
+#define IP_BATTERY_CABINET_NO_A_2_ADDRESS "192.168.62.17"
+#define IP_BATTERY_CABINET_NO_B_1_ADDRESS "192.168.62.66"
+#define IP_BATTERY_CABINET_NO_B_2_ADDRESS "192.168.62.67"
+#define IP_BATTERY_CABINET_NO_C_1_ADDRESS "192.168.62.116"
+#define IP_BATTERY_CABINET_NO_C_2_ADDRESS "192.168.62.117"
+
+#define IP_Wrokbench_Address "192.168.62.100"
 #define IP_6A_ADDRESS_for_A "192.168.60.11"
 #define IP_6A_BACKUP_ADDRESS_for_A "192.168.60.12"
 #define IP_6A_ADDRESS_for_B "192.168.60.31"
 #define IP_6A_BACKUP_ADDRESS_for_B "192.168.60.32"
+#define IP_6A_ADDRESS_for_C "192.168.60.51"
+#define IP_6A_BACKUP_ADDRESS_for_C "192.168.60.52"
 #define IP_6A_ADDRESS_for_test "192.168.62.123"
 #define IP_6A_BACKUP_ADDRESS_for_test "192.168.62.124"
 #define GROUP_IP "239.255.60.82"
 #define GROUP_PORT 7300
 #define GPOUP_MESSAGE_LEN 64
+#define STEEL_BORROW_MESSAGE_LEN 17
 #define FROM_6A_MESSAGE_LEN 96
 #define CLIENT_for_6A_PORT 7000
 #define FROM_WORKBENCH_MESSAGE_LEN 20
@@ -69,6 +80,17 @@ typedef struct eth_send_package
     unsigned char min;
     unsigned char sec;
 } ETH_SEND_PACKAGE;
+
+typedef struct eth_send_package_mul
+{
+    PACKAGE_HEADER header;
+    unsigned char len;
+    unsigned char type[2];
+    unsigned char self_num;
+    unsigned char press_stat;
+    unsigned char borrow_flag;
+    unsigned char reserve[8];
+} ETN_MUL_SEND_PACKAGE;
 
 #pragma pack ()
 

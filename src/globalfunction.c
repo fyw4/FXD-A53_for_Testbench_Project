@@ -141,9 +141,9 @@ int init_logfile()
 	sprintf(filename_cculog, "%s/%04d%02d%02d-%02d%02d%02d.log", filepath_cculog, local->tm_year + 1900, local->tm_mon + 1, local->tm_mday, local->tm_hour, local->tm_min, local->tm_sec);
 	creat(filename_cculog, 0755);
 
-	_CCU_LOG_("------FXD-A53 application start------");
+	_CCU_LOG_("------FXD-A53_for_Testbench(FXD) application start------");
 	_CCU_LOG_("------ 6 nework interface -----");
-	_CCU_LOG_("Software Version %d.%d.%d.%d", INNER_VERSION_NUMBER_X, INNER_VERSION_NUMBER_Y, INNER_VERSION_NUMBER_Z, INNER_VERSION_NUMBER_Z_1);
+	_CCU_LOG_("Software Version %d.%d.%d", INNER_VERSION_NUMBER_X, INNER_VERSION_NUMBER_Y, INNER_VERSION_NUMBER_Z);
 	_CCU_LOG_("Init log file:%s create success.", filename_cculog);
 
 #if DATA_RECORD_MODE

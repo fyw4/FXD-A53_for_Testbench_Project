@@ -73,6 +73,7 @@ void thread_eth_server()
                     extinguish_info_message_to_Workbench->workbench_command_byte_NO_2 = buf[6];
                 }
 
+                printf("recv: ");
                 for (int i = 0; i < recv_len; i++)
                     printf("%02x ", buf[i]);
                 printf("\n");
@@ -98,7 +99,7 @@ void thread_eth_client()
     struct sockaddr_in dstaddr;
     dstaddr.sin_family = AF_INET;
     dstaddr.sin_port = htons(CLIENT_PORT);
-    dstaddr.sin_addr.s_addr = inet_addr(IP_Wrokbench_Address);
+    dstaddr.sin_addr.s_addr = inet_addr(IP_6A_ADDRESS_for_A);
 
     unsigned char send_buff_to_Workbench[FROM_WORKBENCH_MESSAGE_LEN] = {0};
     extinguish_info_message_to_Workbench = (EXTINGUISH_INFO_MESSAGE_to_Workbench *)malloc(sizeof(EXTINGUISH_INFO_MESSAGE_to_Workbench));
@@ -131,6 +132,7 @@ void thread_eth_client()
             perror("thread_eth_client send fail!\r\n");
         }
 
+        printf("send: ");
         for (int i = 0; i < send_len; i++)
             printf("%02x ", send_buff_to_Workbench[i]);
         printf("\n");

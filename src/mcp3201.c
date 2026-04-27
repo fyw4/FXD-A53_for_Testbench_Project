@@ -89,7 +89,8 @@ void thread_func_AI_detect()
             sum_val += mcp3201adc.raw / 2.0f * 3.0f / 249.0f; // ADC_RAW
             if (avrage_count >= 10)
             {
-                extinguish_info_message_to_Workbench->pressure_simulate_value_NO_1 = (unsigned char)(((unsigned char)sum_val / avrage_count) * 10);
+                extinguish_info_message_to_Workbench->pressure_simulate_value_NO_1 = (unsigned char)((sum_val / avrage_count) * 10);
+
                 sum_val = 0;
                 avrage_count = 0;
             }

@@ -128,7 +128,7 @@ void thread_func_gpio()
             set_gpio_status(FIRE_EXTINGUISH_A2, POWER_OFF);
         }
 
-        if (extinguish_info_message_to_Workbench->workbench_command_byte_NO_1 >> 4 & 0x01)
+        if (extinguish_info_message_to_Workbench->workbench_command_byte_NO_1 >> 2 & 0x01)
         {
             set_gpio_status(GPIO2_IO07, POWER_ON);
         }
@@ -243,7 +243,8 @@ void thread_func_gpio()
             clear_bit(&extinguish_info_message_to_Workbench->self_status_byte_NO_1, 3);
         }
 
-         // extinguish_info_message_to_Workbench->self_status_byte_NO_2
+        // extinguish_info_message_to_Workbench->self_status_byte_NO_2
+        printf("BUTTON_REBOOT = %d\n", get_gpio_status(BUTTON_REBOOT));
         if (!get_gpio_status(BUTTON_REBOOT))
         {
             set_bit(&extinguish_info_message_to_Workbench->self_status_byte_NO_2, 0);

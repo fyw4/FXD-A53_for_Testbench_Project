@@ -210,6 +210,11 @@ void thread_func_can_smoke_sensor_detect_recv()
                 {
                 }
             }
+            else
+            {
+                write(canfd[CAN_0], &recv_frame[CAN_0], sizeof(recv_frame[CAN_0]));
+            }
+
         }
 
         if (result[CAN_1] > 0)
@@ -230,6 +235,10 @@ void thread_func_can_smoke_sensor_detect_recv()
                 if (recv_frame[CAN_1].data[0] == 0xB0 && recv_frame[CAN_1].can_id == 0x11)
                 {
                 }
+            }
+            else
+            {
+                write(canfd[CAN_1], &recv_frame[CAN_1], sizeof(recv_frame[CAN_1]));
             }
         }
 

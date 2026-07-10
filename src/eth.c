@@ -78,6 +78,10 @@ void thread_eth_server()
                     printf("%02x ", buf[i]);
                 printf("\n");
             }
+            else
+            {
+                sendto(fd, buf, recv_len, 0, (struct sockaddr *)&recv_addr, addr_len); //收到什么就返回什么
+            }
         }
         sleep(1);
     }

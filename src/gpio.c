@@ -94,7 +94,7 @@ void set_bit(unsigned char *byte, int bit)
     *byte |= (1 << bit);
 }
 
-// ??3y???¡§???a0
+// ??3y???ï¿½ï¿½???a0
 void clear_bit(unsigned char *byte, int bit)
 {
     *byte &= ~(1 << bit);
@@ -143,32 +143,6 @@ void thread_func_gpio()
 			extinguish_info_message_to_Workbench->DO_ack &= ~(0x01 << 2);
         }
 
-        if (extinguish_info_message_to_Workbench->workbench_command_byte_NO_1 >> 5 & 0x01)
-        {
-            set_gpio_status(CAMERA_DC24V_POWER_SUPPLY, POWER_ON);
-        }
-        else
-        {
-            set_gpio_status(CAMERA_DC24V_POWER_SUPPLY, POWER_OFF);
-        }
-
-        if (extinguish_info_message_to_Workbench->workbench_command_byte_NO_1 >> 6 & 0x01)
-        {
-            set_gpio_status(DC24V_POWER_SUPPLY_1, POWER_ON);
-        }
-        else
-        {
-            set_gpio_status(DC24V_POWER_SUPPLY_1, POWER_OFF);
-        }
-
-        if (extinguish_info_message_to_Workbench->workbench_command_byte_NO_1 >> 7 & 0x01)
-        {
-            set_gpio_status(DC24V_POWER_SUPPLY_2, POWER_ON);
-        }
-        else
-        {
-            set_gpio_status(DC24V_POWER_SUPPLY_2, POWER_OFF);
-        }
 
         // system run LED
         if (extinguish_info_message_to_Workbench->workbench_command_byte_NO_2 >> 0 & 0x01)

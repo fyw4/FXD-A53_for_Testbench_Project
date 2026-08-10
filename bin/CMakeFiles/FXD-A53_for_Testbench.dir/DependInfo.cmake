@@ -4,14 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/src/can.c" "/mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/FXD-A53_for_Testbench.dir/src/can.c.o"
-  "/mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/src/eth.c" "/mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/FXD-A53_for_Testbench.dir/src/eth.c.o"
-  "/mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/src/globalfunction.c" "/mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/FXD-A53_for_Testbench.dir/src/globalfunction.c.o"
-  "/mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/src/globalvariables.c" "/mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/FXD-A53_for_Testbench.dir/src/globalvariables.c.o"
-  "/mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/src/gpio.c" "/mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/FXD-A53_for_Testbench.dir/src/gpio.c.o"
-  "/mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/src/main.c" "/mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/FXD-A53_for_Testbench.dir/src/main.c.o"
-  "/mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/src/mcp3201.c" "/mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/FXD-A53_for_Testbench.dir/src/mcp3201.c.o"
-  "/mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/src/signalfunction.c" "/mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/FXD-A53_for_Testbench.dir/src/signalfunction.c.o"
+  "/mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/src/can.c" "/mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/FXD-A53_for_Testbench.dir/src/can.c.o"
+  "/mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/src/eth.c" "/mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/FXD-A53_for_Testbench.dir/src/eth.c.o"
+  "/mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/src/globalfunction.c" "/mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/FXD-A53_for_Testbench.dir/src/globalfunction.c.o"
+  "/mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/src/globalvariables.c" "/mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/FXD-A53_for_Testbench.dir/src/globalvariables.c.o"
+  "/mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/src/gpio.c" "/mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/FXD-A53_for_Testbench.dir/src/gpio.c.o"
+  "/mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/src/main.c" "/mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/FXD-A53_for_Testbench.dir/src/main.c.o"
+  "/mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/src/mcp3201.c" "/mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/FXD-A53_for_Testbench.dir/src/mcp3201.c.o"
+  "/mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/src/signalfunction.c" "/mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/FXD-A53_for_Testbench.dir/src/signalfunction.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

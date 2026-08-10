@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project
+CMAKE_SOURCE_DIR = /mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin
+CMAKE_BINARY_DIR = /mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin
 
 # Include any dependencies generated for this target.
 include CMakeFiles/FXD-A53_for_Testbench.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/FXD-A53_for_Testbench.dir/flags.make
 
 CMakeFiles/FXD-A53_for_Testbench.dir/src/can.c.o: CMakeFiles/FXD-A53_for_Testbench.dir/flags.make
 CMakeFiles/FXD-A53_for_Testbench.dir/src/can.c.o: ../src/can.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/FXD-A53_for_Testbench.dir/src/can.c.o"
-	/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FXD-A53_for_Testbench.dir/src/can.c.o   -c /mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/src/can.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/FXD-A53_for_Testbench.dir/src/can.c.o"
+	/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FXD-A53_for_Testbench.dir/src/can.c.o   -c /mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/src/can.c
 
 CMakeFiles/FXD-A53_for_Testbench.dir/src/can.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/FXD-A53_for_Testbench.dir/src/can.c.i"
-	/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/src/can.c > CMakeFiles/FXD-A53_for_Testbench.dir/src/can.c.i
+	/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/src/can.c > CMakeFiles/FXD-A53_for_Testbench.dir/src/can.c.i
 
 CMakeFiles/FXD-A53_for_Testbench.dir/src/can.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/FXD-A53_for_Testbench.dir/src/can.c.s"
-	/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/src/can.c -o CMakeFiles/FXD-A53_for_Testbench.dir/src/can.c.s
+	/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/src/can.c -o CMakeFiles/FXD-A53_for_Testbench.dir/src/can.c.s
 
 CMakeFiles/FXD-A53_for_Testbench.dir/src/can.c.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/FXD-A53_for_Testbench.dir/src/can.c.o.provides.build: CMakeFiles/FXD-
 
 CMakeFiles/FXD-A53_for_Testbench.dir/src/eth.c.o: CMakeFiles/FXD-A53_for_Testbench.dir/flags.make
 CMakeFiles/FXD-A53_for_Testbench.dir/src/eth.c.o: ../src/eth.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/FXD-A53_for_Testbench.dir/src/eth.c.o"
-	/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FXD-A53_for_Testbench.dir/src/eth.c.o   -c /mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/src/eth.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/FXD-A53_for_Testbench.dir/src/eth.c.o"
+	/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FXD-A53_for_Testbench.dir/src/eth.c.o   -c /mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/src/eth.c
 
 CMakeFiles/FXD-A53_for_Testbench.dir/src/eth.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/FXD-A53_for_Testbench.dir/src/eth.c.i"
-	/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/src/eth.c > CMakeFiles/FXD-A53_for_Testbench.dir/src/eth.c.i
+	/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/src/eth.c > CMakeFiles/FXD-A53_for_Testbench.dir/src/eth.c.i
 
 CMakeFiles/FXD-A53_for_Testbench.dir/src/eth.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/FXD-A53_for_Testbench.dir/src/eth.c.s"
-	/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/src/eth.c -o CMakeFiles/FXD-A53_for_Testbench.dir/src/eth.c.s
+	/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/src/eth.c -o CMakeFiles/FXD-A53_for_Testbench.dir/src/eth.c.s
 
 CMakeFiles/FXD-A53_for_Testbench.dir/src/eth.c.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/FXD-A53_for_Testbench.dir/src/eth.c.o.provides.build: CMakeFiles/FXD-
 
 CMakeFiles/FXD-A53_for_Testbench.dir/src/globalfunction.c.o: CMakeFiles/FXD-A53_for_Testbench.dir/flags.make
 CMakeFiles/FXD-A53_for_Testbench.dir/src/globalfunction.c.o: ../src/globalfunction.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/FXD-A53_for_Testbench.dir/src/globalfunction.c.o"
-	/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FXD-A53_for_Testbench.dir/src/globalfunction.c.o   -c /mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/src/globalfunction.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/FXD-A53_for_Testbench.dir/src/globalfunction.c.o"
+	/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FXD-A53_for_Testbench.dir/src/globalfunction.c.o   -c /mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/src/globalfunction.c
 
 CMakeFiles/FXD-A53_for_Testbench.dir/src/globalfunction.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/FXD-A53_for_Testbench.dir/src/globalfunction.c.i"
-	/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/src/globalfunction.c > CMakeFiles/FXD-A53_for_Testbench.dir/src/globalfunction.c.i
+	/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/src/globalfunction.c > CMakeFiles/FXD-A53_for_Testbench.dir/src/globalfunction.c.i
 
 CMakeFiles/FXD-A53_for_Testbench.dir/src/globalfunction.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/FXD-A53_for_Testbench.dir/src/globalfunction.c.s"
-	/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/src/globalfunction.c -o CMakeFiles/FXD-A53_for_Testbench.dir/src/globalfunction.c.s
+	/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/src/globalfunction.c -o CMakeFiles/FXD-A53_for_Testbench.dir/src/globalfunction.c.s
 
 CMakeFiles/FXD-A53_for_Testbench.dir/src/globalfunction.c.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/FXD-A53_for_Testbench.dir/src/globalfunction.c.o.provides.build: CMak
 
 CMakeFiles/FXD-A53_for_Testbench.dir/src/globalvariables.c.o: CMakeFiles/FXD-A53_for_Testbench.dir/flags.make
 CMakeFiles/FXD-A53_for_Testbench.dir/src/globalvariables.c.o: ../src/globalvariables.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/FXD-A53_for_Testbench.dir/src/globalvariables.c.o"
-	/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FXD-A53_for_Testbench.dir/src/globalvariables.c.o   -c /mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/src/globalvariables.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/FXD-A53_for_Testbench.dir/src/globalvariables.c.o"
+	/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FXD-A53_for_Testbench.dir/src/globalvariables.c.o   -c /mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/src/globalvariables.c
 
 CMakeFiles/FXD-A53_for_Testbench.dir/src/globalvariables.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/FXD-A53_for_Testbench.dir/src/globalvariables.c.i"
-	/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/src/globalvariables.c > CMakeFiles/FXD-A53_for_Testbench.dir/src/globalvariables.c.i
+	/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/src/globalvariables.c > CMakeFiles/FXD-A53_for_Testbench.dir/src/globalvariables.c.i
 
 CMakeFiles/FXD-A53_for_Testbench.dir/src/globalvariables.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/FXD-A53_for_Testbench.dir/src/globalvariables.c.s"
-	/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/src/globalvariables.c -o CMakeFiles/FXD-A53_for_Testbench.dir/src/globalvariables.c.s
+	/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/src/globalvariables.c -o CMakeFiles/FXD-A53_for_Testbench.dir/src/globalvariables.c.s
 
 CMakeFiles/FXD-A53_for_Testbench.dir/src/globalvariables.c.o.requires:
 
@@ -155,16 +155,16 @@ CMakeFiles/FXD-A53_for_Testbench.dir/src/globalvariables.c.o.provides.build: CMa
 
 CMakeFiles/FXD-A53_for_Testbench.dir/src/gpio.c.o: CMakeFiles/FXD-A53_for_Testbench.dir/flags.make
 CMakeFiles/FXD-A53_for_Testbench.dir/src/gpio.c.o: ../src/gpio.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/FXD-A53_for_Testbench.dir/src/gpio.c.o"
-	/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FXD-A53_for_Testbench.dir/src/gpio.c.o   -c /mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/src/gpio.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/FXD-A53_for_Testbench.dir/src/gpio.c.o"
+	/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FXD-A53_for_Testbench.dir/src/gpio.c.o   -c /mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/src/gpio.c
 
 CMakeFiles/FXD-A53_for_Testbench.dir/src/gpio.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/FXD-A53_for_Testbench.dir/src/gpio.c.i"
-	/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/src/gpio.c > CMakeFiles/FXD-A53_for_Testbench.dir/src/gpio.c.i
+	/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/src/gpio.c > CMakeFiles/FXD-A53_for_Testbench.dir/src/gpio.c.i
 
 CMakeFiles/FXD-A53_for_Testbench.dir/src/gpio.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/FXD-A53_for_Testbench.dir/src/gpio.c.s"
-	/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/src/gpio.c -o CMakeFiles/FXD-A53_for_Testbench.dir/src/gpio.c.s
+	/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/src/gpio.c -o CMakeFiles/FXD-A53_for_Testbench.dir/src/gpio.c.s
 
 CMakeFiles/FXD-A53_for_Testbench.dir/src/gpio.c.o.requires:
 
@@ -179,16 +179,16 @@ CMakeFiles/FXD-A53_for_Testbench.dir/src/gpio.c.o.provides.build: CMakeFiles/FXD
 
 CMakeFiles/FXD-A53_for_Testbench.dir/src/main.c.o: CMakeFiles/FXD-A53_for_Testbench.dir/flags.make
 CMakeFiles/FXD-A53_for_Testbench.dir/src/main.c.o: ../src/main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/FXD-A53_for_Testbench.dir/src/main.c.o"
-	/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FXD-A53_for_Testbench.dir/src/main.c.o   -c /mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/src/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/FXD-A53_for_Testbench.dir/src/main.c.o"
+	/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FXD-A53_for_Testbench.dir/src/main.c.o   -c /mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/src/main.c
 
 CMakeFiles/FXD-A53_for_Testbench.dir/src/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/FXD-A53_for_Testbench.dir/src/main.c.i"
-	/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/src/main.c > CMakeFiles/FXD-A53_for_Testbench.dir/src/main.c.i
+	/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/src/main.c > CMakeFiles/FXD-A53_for_Testbench.dir/src/main.c.i
 
 CMakeFiles/FXD-A53_for_Testbench.dir/src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/FXD-A53_for_Testbench.dir/src/main.c.s"
-	/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/src/main.c -o CMakeFiles/FXD-A53_for_Testbench.dir/src/main.c.s
+	/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/src/main.c -o CMakeFiles/FXD-A53_for_Testbench.dir/src/main.c.s
 
 CMakeFiles/FXD-A53_for_Testbench.dir/src/main.c.o.requires:
 
@@ -203,16 +203,16 @@ CMakeFiles/FXD-A53_for_Testbench.dir/src/main.c.o.provides.build: CMakeFiles/FXD
 
 CMakeFiles/FXD-A53_for_Testbench.dir/src/mcp3201.c.o: CMakeFiles/FXD-A53_for_Testbench.dir/flags.make
 CMakeFiles/FXD-A53_for_Testbench.dir/src/mcp3201.c.o: ../src/mcp3201.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/FXD-A53_for_Testbench.dir/src/mcp3201.c.o"
-	/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FXD-A53_for_Testbench.dir/src/mcp3201.c.o   -c /mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/src/mcp3201.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/FXD-A53_for_Testbench.dir/src/mcp3201.c.o"
+	/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FXD-A53_for_Testbench.dir/src/mcp3201.c.o   -c /mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/src/mcp3201.c
 
 CMakeFiles/FXD-A53_for_Testbench.dir/src/mcp3201.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/FXD-A53_for_Testbench.dir/src/mcp3201.c.i"
-	/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/src/mcp3201.c > CMakeFiles/FXD-A53_for_Testbench.dir/src/mcp3201.c.i
+	/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/src/mcp3201.c > CMakeFiles/FXD-A53_for_Testbench.dir/src/mcp3201.c.i
 
 CMakeFiles/FXD-A53_for_Testbench.dir/src/mcp3201.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/FXD-A53_for_Testbench.dir/src/mcp3201.c.s"
-	/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/src/mcp3201.c -o CMakeFiles/FXD-A53_for_Testbench.dir/src/mcp3201.c.s
+	/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/src/mcp3201.c -o CMakeFiles/FXD-A53_for_Testbench.dir/src/mcp3201.c.s
 
 CMakeFiles/FXD-A53_for_Testbench.dir/src/mcp3201.c.o.requires:
 
@@ -227,16 +227,16 @@ CMakeFiles/FXD-A53_for_Testbench.dir/src/mcp3201.c.o.provides.build: CMakeFiles/
 
 CMakeFiles/FXD-A53_for_Testbench.dir/src/signalfunction.c.o: CMakeFiles/FXD-A53_for_Testbench.dir/flags.make
 CMakeFiles/FXD-A53_for_Testbench.dir/src/signalfunction.c.o: ../src/signalfunction.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/FXD-A53_for_Testbench.dir/src/signalfunction.c.o"
-	/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FXD-A53_for_Testbench.dir/src/signalfunction.c.o   -c /mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/src/signalfunction.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/FXD-A53_for_Testbench.dir/src/signalfunction.c.o"
+	/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/FXD-A53_for_Testbench.dir/src/signalfunction.c.o   -c /mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/src/signalfunction.c
 
 CMakeFiles/FXD-A53_for_Testbench.dir/src/signalfunction.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/FXD-A53_for_Testbench.dir/src/signalfunction.c.i"
-	/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/src/signalfunction.c > CMakeFiles/FXD-A53_for_Testbench.dir/src/signalfunction.c.i
+	/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/src/signalfunction.c > CMakeFiles/FXD-A53_for_Testbench.dir/src/signalfunction.c.i
 
 CMakeFiles/FXD-A53_for_Testbench.dir/src/signalfunction.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/FXD-A53_for_Testbench.dir/src/signalfunction.c.s"
-	/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/src/signalfunction.c -o CMakeFiles/FXD-A53_for_Testbench.dir/src/signalfunction.c.s
+	/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/src/signalfunction.c -o CMakeFiles/FXD-A53_for_Testbench.dir/src/signalfunction.c.s
 
 CMakeFiles/FXD-A53_for_Testbench.dir/src/signalfunction.c.o.requires:
 
@@ -274,7 +274,7 @@ FXD-A53_for_Testbench: CMakeFiles/FXD-A53_for_Testbench.dir/src/signalfunction.c
 FXD-A53_for_Testbench: CMakeFiles/FXD-A53_for_Testbench.dir/build.make
 FXD-A53_for_Testbench: ../lib/libsocketcan.a
 FXD-A53_for_Testbench: CMakeFiles/FXD-A53_for_Testbench.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking C executable FXD-A53_for_Testbench"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking C executable FXD-A53_for_Testbench"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/FXD-A53_for_Testbench.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -298,6 +298,6 @@ CMakeFiles/FXD-A53_for_Testbench.dir/clean:
 .PHONY : CMakeFiles/FXD-A53_for_Testbench.dir/clean
 
 CMakeFiles/FXD-A53_for_Testbench.dir/depend:
-	cd /mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project /mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project /mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin /mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin /mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/FXD-A53_for_Testbench.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project /mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project /mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin /mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin /mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/FXD-A53_for_Testbench.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/FXD-A53_for_Testbench.dir/depend
 

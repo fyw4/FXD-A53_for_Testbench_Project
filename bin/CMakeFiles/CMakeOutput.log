@@ -11,7 +11,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
 
-The C compiler identification is GNU, found in "/mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.o"
+The C compiler identification is GNU, found in "/mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.o"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: /opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++ 
@@ -24,33 +24,33 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
 
-The CXX compiler identification is GNU, found in "/mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.o"
+The CXX compiler identification is GNU, found in "/mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.o"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp
+Change Dir: /mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_281c6/fast"
-/usr/bin/make -f CMakeFiles/cmTC_281c6.dir/build.make CMakeFiles/cmTC_281c6.dir/build
-make[1]: 进入目录“/mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_281c6.dir/testCCompiler.c.o
-/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux    -o CMakeFiles/cmTC_281c6.dir/testCCompiler.c.o   -c /mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_281c6
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_281c6.dir/link.txt --verbose=1
-/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux      -rdynamic CMakeFiles/cmTC_281c6.dir/testCCompiler.c.o  -o cmTC_281c6 
-make[1]: 离开目录“/mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp”
+Run Build Command:"/usr/bin/make" "cmTC_fba18/fast"
+/usr/bin/make -f CMakeFiles/cmTC_fba18.dir/build.make CMakeFiles/cmTC_fba18.dir/build
+make[1]: 进入目录“/mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_fba18.dir/testCCompiler.c.o
+/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux    -o CMakeFiles/cmTC_fba18.dir/testCCompiler.c.o   -c /mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_fba18
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fba18.dir/link.txt --verbose=1
+/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux      -rdynamic CMakeFiles/cmTC_fba18.dir/testCCompiler.c.o  -o cmTC_fba18 
+make[1]: 离开目录“/mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp”
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp
+Change Dir: /mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_c3b71/fast"
-/usr/bin/make -f CMakeFiles/cmTC_c3b71.dir/build.make CMakeFiles/cmTC_c3b71.dir/build
-make[1]: 进入目录“/mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_c3b71.dir/CMakeCCompilerABI.c.o
-/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux    -o CMakeFiles/cmTC_c3b71.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_c3b71
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c3b71.dir/link.txt --verbose=1
-/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux     -v -rdynamic CMakeFiles/cmTC_c3b71.dir/CMakeCCompilerABI.c.o  -o cmTC_c3b71 
+Run Build Command:"/usr/bin/make" "cmTC_28554/fast"
+/usr/bin/make -f CMakeFiles/cmTC_28554.dir/build.make CMakeFiles/cmTC_28554.dir/build
+make[1]: 进入目录“/mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_28554.dir/CMakeCCompilerABI.c.o
+/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux    -o CMakeFiles/cmTC_28554.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_28554
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_28554.dir/link.txt --verbose=1
+/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux     -v -rdynamic CMakeFiles/cmTC_28554.dir/CMakeCCompilerABI.c.o  -o cmTC_28554 
 Using built-in specs.
 COLLECT_GCC=/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc
 COLLECT_LTO_WRAPPER=/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/lto-wrapper
@@ -61,24 +61,24 @@ Supported LTO compression algorithms: zlib
 gcc version 10.2.0 (GCC) 
 COMPILER_PATH=/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/:/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/:/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/:/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/:/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/
 LIBRARY_PATH=/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/:/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/lib/:/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib/aarch64-poky-linux/10.2.0/:/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib/
-COLLECT_GCC_OPTIONS='--sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux' '-v' '-rdynamic' '-o' 'cmTC_c3b71' '-mlittle-endian' '-mabi=lp64'
- /opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/collect2 -plugin /opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/liblto_plugin.so -plugin-opt=/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc8aFQFR.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux --build-id --eh-frame-hdr --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -pie -o cmTC_c3b71 /opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib/Scrt1.o /opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib/crti.o /opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib/aarch64-poky-linux/10.2.0/crtbeginS.o -L/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0 -L/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/lib -L/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib/aarch64-poky-linux/10.2.0 -L/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib CMakeFiles/cmTC_c3b71.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib/aarch64-poky-linux/10.2.0/crtendS.o /opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib/crtn.o
-COLLECT_GCC_OPTIONS='--sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux' '-v' '-rdynamic' '-o' 'cmTC_c3b71' '-mlittle-endian' '-mabi=lp64'
-make[1]: 离开目录“/mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp”
+COLLECT_GCC_OPTIONS='--sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux' '-v' '-rdynamic' '-o' 'cmTC_28554' '-mlittle-endian' '-mabi=lp64'
+ /opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/collect2 -plugin /opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/liblto_plugin.so -plugin-opt=/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc97ElxR.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux --build-id --eh-frame-hdr --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -pie -o cmTC_28554 /opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib/Scrt1.o /opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib/crti.o /opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib/aarch64-poky-linux/10.2.0/crtbeginS.o -L/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0 -L/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/lib -L/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib/aarch64-poky-linux/10.2.0 -L/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib CMakeFiles/cmTC_28554.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib/aarch64-poky-linux/10.2.0/crtendS.o /opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib/crtn.o
+COLLECT_GCC_OPTIONS='--sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux' '-v' '-rdynamic' '-o' 'cmTC_28554' '-mlittle-endian' '-mabi=lp64'
+make[1]: 离开目录“/mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp”
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(aarch64-poky-linux-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_c3b71/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_c3b71.dir/build.make CMakeFiles/cmTC_c3b71.dir/build]
-  ignore line: [make[1]: 进入目录“/mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp”]
-  ignore line: [Building C object CMakeFiles/cmTC_c3b71.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux    -o CMakeFiles/cmTC_c3b71.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_c3b71]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c3b71.dir/link.txt --verbose=1]
-  ignore line: [/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux     -v -rdynamic CMakeFiles/cmTC_c3b71.dir/CMakeCCompilerABI.c.o  -o cmTC_c3b71 ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_28554/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_28554.dir/build.make CMakeFiles/cmTC_28554.dir/build]
+  ignore line: [make[1]: 进入目录“/mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp”]
+  ignore line: [Building C object CMakeFiles/cmTC_28554.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux    -o CMakeFiles/cmTC_28554.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_28554]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_28554.dir/link.txt --verbose=1]
+  ignore line: [/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux     -v -rdynamic CMakeFiles/cmTC_28554.dir/CMakeCCompilerABI.c.o  -o cmTC_28554 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc]
   ignore line: [COLLECT_LTO_WRAPPER=/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/lto-wrapper]
@@ -89,13 +89,13 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 10.2.0 (GCC) ]
   ignore line: [COMPILER_PATH=/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/:/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/:/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/:/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/:/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/]
   ignore line: [LIBRARY_PATH=/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/:/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/lib/:/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib/aarch64-poky-linux/10.2.0/:/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux' '-v' '-rdynamic' '-o' 'cmTC_c3b71' '-mlittle-endian' '-mabi=lp64']
-  link line: [ /opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/collect2 -plugin /opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/liblto_plugin.so -plugin-opt=/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc8aFQFR.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux --build-id --eh-frame-hdr --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -pie -o cmTC_c3b71 /opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib/Scrt1.o /opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib/crti.o /opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib/aarch64-poky-linux/10.2.0/crtbeginS.o -L/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0 -L/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/lib -L/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib/aarch64-poky-linux/10.2.0 -L/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib CMakeFiles/cmTC_c3b71.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib/aarch64-poky-linux/10.2.0/crtendS.o /opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux' '-v' '-rdynamic' '-o' 'cmTC_28554' '-mlittle-endian' '-mabi=lp64']
+  link line: [ /opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/collect2 -plugin /opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/liblto_plugin.so -plugin-opt=/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc97ElxR.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux --build-id --eh-frame-hdr --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -pie -o cmTC_28554 /opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib/Scrt1.o /opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib/crti.o /opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib/aarch64-poky-linux/10.2.0/crtbeginS.o -L/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0 -L/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/lib -L/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib/aarch64-poky-linux/10.2.0 -L/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib CMakeFiles/cmTC_28554.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib/aarch64-poky-linux/10.2.0/crtendS.o /opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib/crtn.o]
     arg [/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/cc8aFQFR.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cc97ElxR.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -113,7 +113,7 @@ Parsed C implicit link information from above output:
     arg [-maarch64linux] ==> ignore
     arg [-pie] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_c3b71] ==> ignore
+    arg [cmTC_28554] ==> ignore
     arg [/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib/Scrt1.o] ==> ignore
     arg [/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib/crti.o] ==> ignore
     arg [/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib/aarch64-poky-linux/10.2.0/crtbeginS.o] ==> ignore
@@ -121,7 +121,7 @@ Parsed C implicit link information from above output:
     arg [-L/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/lib] ==> dir [/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/lib]
     arg [-L/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib/aarch64-poky-linux/10.2.0] ==> dir [/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib/aarch64-poky-linux/10.2.0]
     arg [-L/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib] ==> dir [/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib]
-    arg [CMakeFiles/cmTC_c3b71.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_28554.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--push-state] ==> ignore
     arg [--as-needed] ==> ignore
@@ -147,17 +147,17 @@ Parsed C implicit link information from above output:
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: /mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp
+Change Dir: /mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_5f7ef/fast"
-/usr/bin/make -f CMakeFiles/cmTC_5f7ef.dir/build.make CMakeFiles/cmTC_5f7ef.dir/build
-make[1]: 进入目录“/mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_5f7ef.dir/feature_tests.c.o
-/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux   -std=c11 -o CMakeFiles/cmTC_5f7ef.dir/feature_tests.c.o   -c /mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/feature_tests.c
-Linking C executable cmTC_5f7ef
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5f7ef.dir/link.txt --verbose=1
-/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux      -rdynamic CMakeFiles/cmTC_5f7ef.dir/feature_tests.c.o  -o cmTC_5f7ef 
-make[1]: 离开目录“/mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp”
+Run Build Command:"/usr/bin/make" "cmTC_90722/fast"
+/usr/bin/make -f CMakeFiles/cmTC_90722.dir/build.make CMakeFiles/cmTC_90722.dir/build
+make[1]: 进入目录“/mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_90722.dir/feature_tests.c.o
+/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux   -std=c11 -o CMakeFiles/cmTC_90722.dir/feature_tests.c.o   -c /mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/feature_tests.c
+Linking C executable cmTC_90722
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_90722.dir/link.txt --verbose=1
+/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux      -rdynamic CMakeFiles/cmTC_90722.dir/feature_tests.c.o  -o cmTC_90722 
+make[1]: 离开目录“/mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp”
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -167,17 +167,17 @@ make[1]: 离开目录“/mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: /mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp
+Change Dir: /mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_1fd4e/fast"
-/usr/bin/make -f CMakeFiles/cmTC_1fd4e.dir/build.make CMakeFiles/cmTC_1fd4e.dir/build
-make[1]: 进入目录“/mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_1fd4e.dir/feature_tests.c.o
-/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux   -std=c99 -o CMakeFiles/cmTC_1fd4e.dir/feature_tests.c.o   -c /mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/feature_tests.c
-Linking C executable cmTC_1fd4e
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1fd4e.dir/link.txt --verbose=1
-/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux      -rdynamic CMakeFiles/cmTC_1fd4e.dir/feature_tests.c.o  -o cmTC_1fd4e 
-make[1]: 离开目录“/mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp”
+Run Build Command:"/usr/bin/make" "cmTC_559db/fast"
+/usr/bin/make -f CMakeFiles/cmTC_559db.dir/build.make CMakeFiles/cmTC_559db.dir/build
+make[1]: 进入目录“/mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_559db.dir/feature_tests.c.o
+/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux   -std=c99 -o CMakeFiles/cmTC_559db.dir/feature_tests.c.o   -c /mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/feature_tests.c
+Linking C executable cmTC_559db
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_559db.dir/link.txt --verbose=1
+/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux      -rdynamic CMakeFiles/cmTC_559db.dir/feature_tests.c.o  -o cmTC_559db 
+make[1]: 离开目录“/mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp”
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -187,17 +187,17 @@ make[1]: 离开目录“/mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: /mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp
+Change Dir: /mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_e8274/fast"
-/usr/bin/make -f CMakeFiles/cmTC_e8274.dir/build.make CMakeFiles/cmTC_e8274.dir/build
-make[1]: 进入目录“/mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_e8274.dir/feature_tests.c.o
-/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux   -std=c90 -o CMakeFiles/cmTC_e8274.dir/feature_tests.c.o   -c /mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/feature_tests.c
-Linking C executable cmTC_e8274
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e8274.dir/link.txt --verbose=1
-/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux      -rdynamic CMakeFiles/cmTC_e8274.dir/feature_tests.c.o  -o cmTC_e8274 
-make[1]: 离开目录“/mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp”
+Run Build Command:"/usr/bin/make" "cmTC_598e9/fast"
+/usr/bin/make -f CMakeFiles/cmTC_598e9.dir/build.make CMakeFiles/cmTC_598e9.dir/build
+make[1]: 进入目录“/mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_598e9.dir/feature_tests.c.o
+/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux   -std=c90 -o CMakeFiles/cmTC_598e9.dir/feature_tests.c.o   -c /mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/feature_tests.c
+Linking C executable cmTC_598e9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_598e9.dir/link.txt --verbose=1
+/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-gcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux      -rdynamic CMakeFiles/cmTC_598e9.dir/feature_tests.c.o  -o cmTC_598e9 
+make[1]: 离开目录“/mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp”
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -205,30 +205,30 @@ make[1]: 离开目录“/mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp
+Change Dir: /mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_38cbc/fast"
-/usr/bin/make -f CMakeFiles/cmTC_38cbc.dir/build.make CMakeFiles/cmTC_38cbc.dir/build
-make[1]: 进入目录“/mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp”
-Building CXX object CMakeFiles/cmTC_38cbc.dir/testCXXCompiler.cxx.o
-/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++ --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux     -o CMakeFiles/cmTC_38cbc.dir/testCXXCompiler.cxx.o -c /mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_38cbc
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_38cbc.dir/link.txt --verbose=1
-/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++ --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux       -rdynamic CMakeFiles/cmTC_38cbc.dir/testCXXCompiler.cxx.o  -o cmTC_38cbc 
-make[1]: 离开目录“/mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp”
+Run Build Command:"/usr/bin/make" "cmTC_ac8a4/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ac8a4.dir/build.make CMakeFiles/cmTC_ac8a4.dir/build
+make[1]: 进入目录“/mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_ac8a4.dir/testCXXCompiler.cxx.o
+/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++ --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux     -o CMakeFiles/cmTC_ac8a4.dir/testCXXCompiler.cxx.o -c /mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_ac8a4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ac8a4.dir/link.txt --verbose=1
+/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++ --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux       -rdynamic CMakeFiles/cmTC_ac8a4.dir/testCXXCompiler.cxx.o  -o cmTC_ac8a4 
+make[1]: 离开目录“/mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp”
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp
+Change Dir: /mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_8cffc/fast"
-/usr/bin/make -f CMakeFiles/cmTC_8cffc.dir/build.make CMakeFiles/cmTC_8cffc.dir/build
-make[1]: 进入目录“/mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp”
-Building CXX object CMakeFiles/cmTC_8cffc.dir/CMakeCXXCompilerABI.cpp.o
-/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++ --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux     -o CMakeFiles/cmTC_8cffc.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_8cffc
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8cffc.dir/link.txt --verbose=1
-/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++ --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux      -v -rdynamic CMakeFiles/cmTC_8cffc.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_8cffc 
+Run Build Command:"/usr/bin/make" "cmTC_315c9/fast"
+/usr/bin/make -f CMakeFiles/cmTC_315c9.dir/build.make CMakeFiles/cmTC_315c9.dir/build
+make[1]: 进入目录“/mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_315c9.dir/CMakeCXXCompilerABI.cpp.o
+/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++ --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux     -o CMakeFiles/cmTC_315c9.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_315c9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_315c9.dir/link.txt --verbose=1
+/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++ --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux      -v -rdynamic CMakeFiles/cmTC_315c9.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_315c9 
 Using built-in specs.
 COLLECT_GCC=/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++
 COLLECT_LTO_WRAPPER=/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/lto-wrapper
@@ -239,24 +239,24 @@ Supported LTO compression algorithms: zlib
 gcc version 10.2.0 (GCC) 
 COMPILER_PATH=/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/:/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/:/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/:/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/:/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/
 LIBRARY_PATH=/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/:/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/lib/:/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib/aarch64-poky-linux/10.2.0/:/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib/
-COLLECT_GCC_OPTIONS='--sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux' '-v' '-rdynamic' '-o' 'cmTC_8cffc' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64'
- /opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/collect2 -plugin /opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/liblto_plugin.so -plugin-opt=/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccUoRAmR.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux --build-id --eh-frame-hdr --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -pie -o cmTC_8cffc /opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib/Scrt1.o /opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib/crti.o /opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib/aarch64-poky-linux/10.2.0/crtbeginS.o -L/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0 -L/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/lib -L/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib/aarch64-poky-linux/10.2.0 -L/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib CMakeFiles/cmTC_8cffc.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib/aarch64-poky-linux/10.2.0/crtendS.o /opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib/crtn.o
-COLLECT_GCC_OPTIONS='--sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux' '-v' '-rdynamic' '-o' 'cmTC_8cffc' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64'
-make[1]: 离开目录“/mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp”
+COLLECT_GCC_OPTIONS='--sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux' '-v' '-rdynamic' '-o' 'cmTC_315c9' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64'
+ /opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/collect2 -plugin /opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/liblto_plugin.so -plugin-opt=/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccoSVxYD.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux --build-id --eh-frame-hdr --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -pie -o cmTC_315c9 /opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib/Scrt1.o /opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib/crti.o /opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib/aarch64-poky-linux/10.2.0/crtbeginS.o -L/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0 -L/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/lib -L/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib/aarch64-poky-linux/10.2.0 -L/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib CMakeFiles/cmTC_315c9.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib/aarch64-poky-linux/10.2.0/crtendS.o /opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib/crtn.o
+COLLECT_GCC_OPTIONS='--sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux' '-v' '-rdynamic' '-o' 'cmTC_315c9' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64'
+make[1]: 离开目录“/mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp”
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(aarch64-poky-linux-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_8cffc/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_8cffc.dir/build.make CMakeFiles/cmTC_8cffc.dir/build]
-  ignore line: [make[1]: 进入目录“/mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp”]
-  ignore line: [Building CXX object CMakeFiles/cmTC_8cffc.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++ --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux     -o CMakeFiles/cmTC_8cffc.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_8cffc]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8cffc.dir/link.txt --verbose=1]
-  ignore line: [/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++ --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux      -v -rdynamic CMakeFiles/cmTC_8cffc.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_8cffc ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_315c9/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_315c9.dir/build.make CMakeFiles/cmTC_315c9.dir/build]
+  ignore line: [make[1]: 进入目录“/mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp”]
+  ignore line: [Building CXX object CMakeFiles/cmTC_315c9.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++ --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux     -o CMakeFiles/cmTC_315c9.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_315c9]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_315c9.dir/link.txt --verbose=1]
+  ignore line: [/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++ --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux      -v -rdynamic CMakeFiles/cmTC_315c9.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_315c9 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++]
   ignore line: [COLLECT_LTO_WRAPPER=/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/lto-wrapper]
@@ -267,13 +267,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 10.2.0 (GCC) ]
   ignore line: [COMPILER_PATH=/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/:/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/:/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/:/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/:/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/]
   ignore line: [LIBRARY_PATH=/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/:/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/lib/:/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib/aarch64-poky-linux/10.2.0/:/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux' '-v' '-rdynamic' '-o' 'cmTC_8cffc' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64']
-  link line: [ /opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/collect2 -plugin /opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/liblto_plugin.so -plugin-opt=/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccUoRAmR.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux --build-id --eh-frame-hdr --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -pie -o cmTC_8cffc /opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib/Scrt1.o /opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib/crti.o /opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib/aarch64-poky-linux/10.2.0/crtbeginS.o -L/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0 -L/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/lib -L/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib/aarch64-poky-linux/10.2.0 -L/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib CMakeFiles/cmTC_8cffc.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib/aarch64-poky-linux/10.2.0/crtendS.o /opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='--sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux' '-v' '-rdynamic' '-o' 'cmTC_315c9' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64']
+  link line: [ /opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/collect2 -plugin /opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/liblto_plugin.so -plugin-opt=/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccoSVxYD.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux --build-id --eh-frame-hdr --hash-style=gnu -export-dynamic -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -pie -o cmTC_315c9 /opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib/Scrt1.o /opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib/crti.o /opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib/aarch64-poky-linux/10.2.0/crtbeginS.o -L/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/lib/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0 -L/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/lib -L/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib/aarch64-poky-linux/10.2.0 -L/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib CMakeFiles/cmTC_315c9.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib/aarch64-poky-linux/10.2.0/crtendS.o /opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib/crtn.o]
     arg [/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/libexec/aarch64-poky-linux/gcc/aarch64-poky-linux/10.2.0/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccUoRAmR.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccoSVxYD.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -291,7 +291,7 @@ Parsed CXX implicit link information from above output:
     arg [-maarch64linux] ==> ignore
     arg [-pie] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_8cffc] ==> ignore
+    arg [cmTC_315c9] ==> ignore
     arg [/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib/Scrt1.o] ==> ignore
     arg [/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib/crti.o] ==> ignore
     arg [/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib/aarch64-poky-linux/10.2.0/crtbeginS.o] ==> ignore
@@ -299,7 +299,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/lib] ==> dir [/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/lib]
     arg [-L/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib/aarch64-poky-linux/10.2.0] ==> dir [/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib/aarch64-poky-linux/10.2.0]
     arg [-L/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib] ==> dir [/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux/usr/lib]
-    arg [CMakeFiles/cmTC_8cffc.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_315c9.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -321,17 +321,17 @@ Parsed CXX implicit link information from above output:
 
 
 Detecting CXX [-std=c++1z] compiler features compiled with the following output:
-Change Dir: /mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp
+Change Dir: /mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_e1b75/fast"
-/usr/bin/make -f CMakeFiles/cmTC_e1b75.dir/build.make CMakeFiles/cmTC_e1b75.dir/build
-make[1]: 进入目录“/mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp”
-Building CXX object CMakeFiles/cmTC_e1b75.dir/feature_tests.cxx.o
-/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++ --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux    -std=c++1z -o CMakeFiles/cmTC_e1b75.dir/feature_tests.cxx.o -c /mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_e1b75
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e1b75.dir/link.txt --verbose=1
-/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++ --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux       -rdynamic CMakeFiles/cmTC_e1b75.dir/feature_tests.cxx.o  -o cmTC_e1b75 
-make[1]: 离开目录“/mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp”
+Run Build Command:"/usr/bin/make" "cmTC_656f6/fast"
+/usr/bin/make -f CMakeFiles/cmTC_656f6.dir/build.make CMakeFiles/cmTC_656f6.dir/build
+make[1]: 进入目录“/mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_656f6.dir/feature_tests.cxx.o
+/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++ --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux    -std=c++1z -o CMakeFiles/cmTC_656f6.dir/feature_tests.cxx.o -c /mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_656f6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_656f6.dir/link.txt --verbose=1
+/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++ --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux       -rdynamic CMakeFiles/cmTC_656f6.dir/feature_tests.cxx.o  -o cmTC_656f6 
+make[1]: 离开目录“/mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp”
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -394,17 +394,17 @@ make[1]: 离开目录“/mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin
 
 
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: /mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp
+Change Dir: /mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_1df91/fast"
-/usr/bin/make -f CMakeFiles/cmTC_1df91.dir/build.make CMakeFiles/cmTC_1df91.dir/build
-make[1]: 进入目录“/mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp”
-Building CXX object CMakeFiles/cmTC_1df91.dir/feature_tests.cxx.o
-/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++ --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux    -std=c++14 -o CMakeFiles/cmTC_1df91.dir/feature_tests.cxx.o -c /mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_1df91
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1df91.dir/link.txt --verbose=1
-/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++ --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux       -rdynamic CMakeFiles/cmTC_1df91.dir/feature_tests.cxx.o  -o cmTC_1df91 
-make[1]: 离开目录“/mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp”
+Run Build Command:"/usr/bin/make" "cmTC_4ef34/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4ef34.dir/build.make CMakeFiles/cmTC_4ef34.dir/build
+make[1]: 进入目录“/mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_4ef34.dir/feature_tests.cxx.o
+/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++ --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux    -std=c++14 -o CMakeFiles/cmTC_4ef34.dir/feature_tests.cxx.o -c /mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_4ef34
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4ef34.dir/link.txt --verbose=1
+/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++ --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux       -rdynamic CMakeFiles/cmTC_4ef34.dir/feature_tests.cxx.o  -o cmTC_4ef34 
+make[1]: 离开目录“/mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp”
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -467,17 +467,17 @@ make[1]: 离开目录“/mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: /mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp
+Change Dir: /mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_e4650/fast"
-/usr/bin/make -f CMakeFiles/cmTC_e4650.dir/build.make CMakeFiles/cmTC_e4650.dir/build
-make[1]: 进入目录“/mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp”
-Building CXX object CMakeFiles/cmTC_e4650.dir/feature_tests.cxx.o
-/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++ --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux    -std=c++11 -o CMakeFiles/cmTC_e4650.dir/feature_tests.cxx.o -c /mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_e4650
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e4650.dir/link.txt --verbose=1
-/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++ --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux       -rdynamic CMakeFiles/cmTC_e4650.dir/feature_tests.cxx.o  -o cmTC_e4650 
-make[1]: 离开目录“/mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp”
+Run Build Command:"/usr/bin/make" "cmTC_afe32/fast"
+/usr/bin/make -f CMakeFiles/cmTC_afe32.dir/build.make CMakeFiles/cmTC_afe32.dir/build
+make[1]: 进入目录“/mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_afe32.dir/feature_tests.cxx.o
+/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++ --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux    -std=c++11 -o CMakeFiles/cmTC_afe32.dir/feature_tests.cxx.o -c /mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_afe32
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_afe32.dir/link.txt --verbose=1
+/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++ --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux       -rdynamic CMakeFiles/cmTC_afe32.dir/feature_tests.cxx.o  -o cmTC_afe32 
+make[1]: 离开目录“/mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp”
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -540,17 +540,17 @@ make[1]: 离开目录“/mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: /mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp
+Change Dir: /mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_a7f64/fast"
-/usr/bin/make -f CMakeFiles/cmTC_a7f64.dir/build.make CMakeFiles/cmTC_a7f64.dir/build
-make[1]: 进入目录“/mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp”
-Building CXX object CMakeFiles/cmTC_a7f64.dir/feature_tests.cxx.o
-/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++ --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux    -std=c++98 -o CMakeFiles/cmTC_a7f64.dir/feature_tests.cxx.o -c /mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_a7f64
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a7f64.dir/link.txt --verbose=1
-/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++ --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux       -rdynamic CMakeFiles/cmTC_a7f64.dir/feature_tests.cxx.o  -o cmTC_a7f64 
-make[1]: 离开目录“/mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp”
+Run Build Command:"/usr/bin/make" "cmTC_b8d55/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b8d55.dir/build.make CMakeFiles/cmTC_b8d55.dir/build
+make[1]: 进入目录“/mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_b8d55.dir/feature_tests.cxx.o
+/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++ --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux    -std=c++98 -o CMakeFiles/cmTC_b8d55.dir/feature_tests.cxx.o -c /mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_b8d55
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b8d55.dir/link.txt --verbose=1
+/opt/nxp-real-time-edge/2.1/sysroots/x86_64-pokysdk-linux/usr/bin/aarch64-poky-linux/aarch64-poky-linux-g++ --sysroot=/opt/nxp-real-time-edge/2.1/sysroots/cortexa53-crypto-poky-linux       -rdynamic CMakeFiles/cmTC_b8d55.dir/feature_tests.cxx.o  -o cmTC_b8d55 
+make[1]: 离开目录“/mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/bin/CMakeFiles/CMakeTmp”
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers

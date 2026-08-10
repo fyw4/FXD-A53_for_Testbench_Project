@@ -6,5 +6,5 @@ C_FLAGS =
 
 C_DEFINES = 
 
-C_INCLUDES = -I/mnt/hgfs/工程代码/FXD-A53_for_Testbench_Project/include 
+C_INCLUDES = -I/mnt/hgfs/FXD_工程代码/FXD-A53_for_Testbench_Project/include 
 

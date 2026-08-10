@@ -579,7 +579,8 @@ typedef struct extinguish_info_message_to_Workbench
 	unsigned char pressure_simulate_value_NO_2;
 	unsigned char pressure_simulate_value_NO_3;
 	unsigned char sw_choose_val;
-	unsigned char reserved[5];
+	unsigned char DO_ack;	
+	unsigned char reserved[4];
 } EXTINGUISH_INFO_MESSAGE_to_Workbench;
 
 #pragma pack()

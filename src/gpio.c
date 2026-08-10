@@ -113,28 +113,34 @@ void thread_func_gpio()
         if (extinguish_info_message_to_Workbench->workbench_command_byte_NO_1 >> 0 & 0x01)
         {
             set_gpio_status(FIRE_EXTINGUISH_A1, POWER_ON);
+            extinguish_info_message_to_Workbench->DO_ack |= (0x01 << 0);
         }
         else
         {
             set_gpio_status(FIRE_EXTINGUISH_A1, POWER_OFF);
+            extinguish_info_message_to_Workbench->DO_ack &= ~(0x01 << 0);
         }
 
         if (extinguish_info_message_to_Workbench->workbench_command_byte_NO_1 >> 1 & 0x01)
         {
             set_gpio_status(FIRE_EXTINGUISH_A2, POWER_ON);
+            extinguish_info_message_to_Workbench->DO_ack |= (0x01 << 1);
         }
         else
         {
             set_gpio_status(FIRE_EXTINGUISH_A2, POWER_OFF);
+            extinguish_info_message_to_Workbench->DO_ack &= ~(0x01 << 1);
         }
 
         if (extinguish_info_message_to_Workbench->workbench_command_byte_NO_1 >> 2 & 0x01)
         {
             set_gpio_status(GPIO2_IO07, POWER_ON);
+			extinguish_info_message_to_Workbench->DO_ack |= (0x01 << 2);
         }
         else
         {
             set_gpio_status(GPIO2_IO07, POWER_OFF);
+			extinguish_info_message_to_Workbench->DO_ack &= ~(0x01 << 2);
         }
 
         if (extinguish_info_message_to_Workbench->workbench_command_byte_NO_1 >> 5 & 0x01)

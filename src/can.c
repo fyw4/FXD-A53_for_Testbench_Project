@@ -36,6 +36,9 @@
 #include "can_netlink.h"
 #include "libsocketcan.h"
 
+static unsigned char can_0_num = 0;
+static unsigned char can_1_num = 0;
+
 int init_can(char *name, char *bitrate)
 {
     int result = 0;
@@ -148,19 +151,29 @@ int can_opencircuit_detect_send()
 
     frame[0].can_id = 0x11;
     frame[0].can_dlc = 1;
-    frame[0].data[0] = 0xB0;
 
     frame[1].can_id = 0x22;
     frame[1].can_dlc = 1;
-    frame[1].data[0] = 0xA0;
 
     while (1)
     {
+        frame[0].data[0] = can_0_num++;
+        frame[1].data[0] = can_1_num++;
+
+        if (can_0_num >= 0xFF)
+        {
+            can_0_num = 0;
+        }
+
+        if (can_1_num >= 0xFF)
+        {
+            can_1_num = 0;
+        }
         nbytes = write(canfd[CAN_0], &frame[0], sizeof(frame[0])); // send frame[0]
 
         nbytes = write(canfd[CAN_1], &frame[1], sizeof(frame[1])); // send frame[1]
 
-        sleep(2);
+        sleep(1);
     }
 
     return 0;
@@ -214,7 +227,6 @@ void thread_func_can_smoke_sensor_detect_recv()
             {
                 write(canfd[CAN_0], &recv_frame[CAN_0], sizeof(recv_frame[CAN_0]));
             }
-
         }
 
         if (result[CAN_1] > 0)

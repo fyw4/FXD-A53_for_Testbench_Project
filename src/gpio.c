@@ -102,6 +102,7 @@ void clear_bit(unsigned char *byte, int bit)
 
 void thread_func_gpio()
 {
+    unsigned char sw_val = 0;
     while (1)
     {
         if (extinguish_info_message_to_Workbench == NULL)
@@ -135,14 +136,13 @@ void thread_func_gpio()
         if (extinguish_info_message_to_Workbench->workbench_command_byte_NO_1 >> 2 & 0x01)
         {
             set_gpio_status(GPIO2_IO07, POWER_ON);
-			extinguish_info_message_to_Workbench->DO_ack |= (0x01 << 2);
+            extinguish_info_message_to_Workbench->DO_ack |= (0x01 << 2);
         }
         else
         {
             set_gpio_status(GPIO2_IO07, POWER_OFF);
-			extinguish_info_message_to_Workbench->DO_ack &= ~(0x01 << 2);
+            extinguish_info_message_to_Workbench->DO_ack &= ~(0x01 << 2);
         }
-
 
         // system run LED
         if (extinguish_info_message_to_Workbench->workbench_command_byte_NO_2 >> 0 & 0x01)
@@ -205,23 +205,23 @@ void thread_func_gpio()
         }
 
         // extinguish_info_message_to_Workbench->self_status_byte_NO_1
-        if (get_gpio_status(EXTINGUISH_ACK))
-        {
-            set_bit(&extinguish_info_message_to_Workbench->self_status_byte_NO_1, 0);
-        }
-        else
-        {
-            clear_bit(&extinguish_info_message_to_Workbench->self_status_byte_NO_1, 0);
-        }
+        // if (get_gpio_status(EXTINGUISH_ACK))
+        // {
+        //     set_bit(&extinguish_info_message_to_Workbench->self_status_byte_NO_1, 0);
+        // }
+        // else
+        // {
+        //     clear_bit(&extinguish_info_message_to_Workbench->self_status_byte_NO_1, 0);
+        // }
 
-        if (get_gpio_status(OPEN_CIRCUIT))
-        {
-            set_bit(&extinguish_info_message_to_Workbench->self_status_byte_NO_1, 3);
-        }
-        else
-        {
-            clear_bit(&extinguish_info_message_to_Workbench->self_status_byte_NO_1, 3);
-        }
+        // if (get_gpio_status(OPEN_CIRCUIT))
+        // {
+        //     set_bit(&extinguish_info_message_to_Workbench->self_status_byte_NO_1, 3);
+        // }
+        // else
+        // {
+        //     clear_bit(&extinguish_info_message_to_Workbench->self_status_byte_NO_1, 3);
+        // }
 
         // extinguish_info_message_to_Workbench->self_status_byte_NO_2
         printf("BUTTON_REBOOT = %d\n", get_gpio_status(BUTTON_REBOOT));
@@ -252,10 +252,18 @@ void thread_func_gpio()
             clear_bit(&extinguish_info_message_to_Workbench->self_status_byte_NO_2, 2);
         }
 
-        extinguish_info_message_to_Workbench->sw_choose_val = get_gpio_status(SW1) << 3 |
-                                                              get_gpio_status(SW2) << 2 |
-                                                              get_gpio_status(SW3) << 1 |
-                                                              get_gpio_status(SW4) << 0;
+        sw_val = 0;
+        sw_val |= get_gpio_status(SW1) << 3;
+        sw_val |= get_gpio_status(SW2) << 2;
+        sw_val |= get_gpio_status(SW3) << 1;
+        sw_val |= get_gpio_status(SW4) << 0;
+        extinguish_info_message_to_Workbench->sw_choose_val = sw_val;
+                                                          
+        printf("get_gpio_status(SW1) << 3 %02x\n", get_gpio_status(SW1) << 3);
+        printf("get_gpio_status(SW2) << 2 %02x\n", get_gpio_status(SW2) << 2);
+        printf("get_gpio_status(SW3) << 1 %02x\n", get_gpio_status(SW3) << 1);
+        printf("get_gpio_status(SW4) << 0 %02x\n", get_gpio_status(SW4) << 0);
+        printf("extinguish_info_message_to_Workbench->sw_choose_val: %02x\n", extinguish_info_message_to_Workbench->sw_choose_val);  
 
         sleep(1);
     }
